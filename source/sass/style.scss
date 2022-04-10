@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+@use "./blocks/fonts.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/burger.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/logo-mobile.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/button.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/rules.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/copyright.scss";
+
+body {
+  background: #ffffff;
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

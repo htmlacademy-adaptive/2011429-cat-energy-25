@@ -1,0 +1,145 @@
+.example {
+  background-color: #EAEAEA;
+  padding-top: 25px;
+}
+
+.example__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.example__item {
+  position: relative;
+  border: 1px solid #CDCDCD;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+dt {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: #EAEAEA;
+  width: 77px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.example__img {
+  display: none;
+  object-fit: contain;
+  margin-bottom: 15px;
+  &--active {
+    display: block;
+  }
+}
+
+.example__range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.example__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__range-scale {
+  box-sizing: border-box;
+  padding: 4px 6px 4px 6px;
+  position: relative;
+  width: 86px;
+  height: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 6px;
+}
+
+.example__toggle {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 36px;
+  height: 6px;
+  background-color: #68B738;
+  border: none;
+  border-radius: 6px;
+  &--past {
+    top: 50%;
+    left: 0;
+    transform: translate(6px, -50%);
+  }
+  &--future {
+    top: 50%;
+    right: 0;
+    transform: translate(-6px, -50%);
+  }
+  &--active {
+    display: block;
+  }
+}
+
+
+
+
