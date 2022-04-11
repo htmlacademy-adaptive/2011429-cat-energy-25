@@ -1,6 +1,10 @@
 .example {
   background-color: #EAEAEA;
-  padding-top: 25px;
+}
+
+.example__wrapper {
+  box-sizing: border-box;
+  padding: 25px 20px 0 20px;
 }
 
 .example__title {
@@ -41,7 +45,7 @@
   margin-bottom: 14px;
 }
 
-dt {
+.example__number {
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
@@ -51,7 +55,7 @@ dt {
   color: #000000;
 }
 
-dd {
+.example__parametr {
   margin: 0;
   padding: 0;
   position: absolute;

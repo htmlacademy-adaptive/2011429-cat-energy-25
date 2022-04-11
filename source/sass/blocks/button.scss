@@ -4,4 +4,15 @@
   border: none;
   background-color: #68B738;
   color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 280px;
+  &--download {
+    background-color: #F2F2F2;
+    color: #444444;
+  }
 }

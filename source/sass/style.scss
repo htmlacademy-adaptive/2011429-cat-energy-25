@@ -4,6 +4,7 @@
 @use "./blocks/main-nav.scss";
 @use "./blocks/logo-mobile.scss";
 @use "./blocks/promo.scss";
+@use "./blocks/headline.scss";
 @use "./blocks/button.scss";
 @use "./blocks/programs.scss";
 @use "./blocks/rules.scss";
@@ -12,6 +13,19 @@
 @use "./blocks/main-footer.scss";
 @use "./blocks/social.scss";
 @use "./blocks/copyright.scss";
+@use "./blocks/catalog-main.scss";
+@use "./blocks/catalog-extra.scss";
+@use "./blocks/catalog-card.scss";
+@use "./blocks/title.scss";
+@use "./blocks/subtitle.scss";
+@use "./blocks/card-description.scss";
+@use "./blocks/catalog-download.scss";
+@use "./blocks/catalog-extra-card.scss";
+@use "./blocks/gift.scss";
+
+
+
+
 
 body {
   background: #ffffff;
@@ -27,7 +41,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 280px;
+  width: 320px;
 }
 
 .visually-hidden {

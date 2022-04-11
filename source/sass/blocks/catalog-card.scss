@@ -1,0 +1,37 @@
+.catalog-card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 13px;
+}
+
+.catalog-card__subtitle {
+  margin: 0;
+  color: #222222;
+  width: 80px;
+  margin-bottom: 18px;
+}
+
+.catalog-card__img {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-card__details-list {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+}
+
+.catalog-card__details-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__button {
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+}

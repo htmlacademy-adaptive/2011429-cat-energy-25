@@ -1,0 +1,26 @@
+.catalog-extra-card {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #CDCDCD;
+  &:first-child {
+    border-top: 1px solid #CDCDCD;
+  }
+}
+
+.catalog-extra-card__subtitle {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.catalog-extra-card__details-list {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
+.catalog-extra-card__details-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

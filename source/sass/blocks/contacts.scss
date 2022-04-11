@@ -1,3 +1,14 @@
+.contacts {
+  &--darker {
+  background-color: #F2F2F2;
+  }
+}
+
+.contacts__wrapper {
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+}
+
 .contacts__wrapper-address {
   padding: 26px 0 26px 0;
   display: flex;
@@ -24,9 +35,7 @@
   width: 139px;
 }
 
-.contacts__map {/*
-  width: 320px;
-  height: 362px; */
+.contacts__map {
   display: flex;
   justify-content: center;
   align-items: center;
