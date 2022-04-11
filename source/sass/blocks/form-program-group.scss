@@ -8,17 +8,24 @@
   }
 
   &--contacts {
+    position: relative;
     padding: 0 20px 0 20px;
     margin-bottom: 24px;
     border: none;
   }
   &--comment {
+    position: relative;
     padding: 0 20px 0 20px;
     border: none;
   }
   &--checkbox {
+    position: relative;
     padding: 0 20px 0 20px;
     border: none;
+  }
+  legend {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -32,6 +39,47 @@
   margin: 0;
   padding-top: 23px;
   margin-bottom: 36px;
+  &--contacts {
+    width: 190px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 99px;
+      height: 2px;
+      top: 38px;
+      right: 0;
+      background-color: $main-color;
+      z-index: 1;
+    }
+  }
+  &--comment {
+    width: 122px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 158px;
+      height: 2px;
+      top: 35px;
+      right: 0;
+      background-color: $main-color;
+      z-index: 1;
+    }
+  }
+
+  &--extra {
+    width: 142px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 136px;
+      height: 2px;
+      top: 35px;
+      right: 0;
+      background-color: $main-color;
+      z-index: 1;
+    }
+  }
+
 }
 
 .form-program-group__textarea {

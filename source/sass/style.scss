@@ -1,3 +1,4 @@
+@use "./blocks/variables.scss";
 @use "./blocks/fonts.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/burger.scss";
@@ -26,9 +27,8 @@
 @use "./blocks/form-program.scss";
 @use "./blocks/form-program-label.scss";
 @use "./blocks/form-program-group.scss";
-
-
-
+@use "./blocks/range.scss";
+@use "./blocks/range-scale.scss";
 
 
 html {
