@@ -11,7 +11,7 @@
 
 .promo__main {
   position: relative;
-  background-image: url("../../img/promo-cat-bg.png");
+  background-image: url("../img/promo-cat-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height: 302px;
@@ -46,11 +46,18 @@
   transform: translate(-50%, -50%);
 }
 
-.promo__button {
+.promo__link {
+  box-sizing: border-box;
+  display: block;
   width: 280px;
   min-height: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

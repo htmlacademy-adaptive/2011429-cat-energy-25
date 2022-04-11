@@ -1,0 +1,42 @@
+.form-program-label {
+  display: flex;
+  align-items: center;
+}
+
+.form-program-label__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 13px;
+  &--dark {
+    color: #000000;
+  }
+}
+
+.form-program-label__input {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 13px 14px 14px 14px;
+  border: 1px solid #E7E7E7;
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444
+  }
+  &--text {
+    flex-grow: 1;
+    min-height: 45px;
+  }
+  &--radio {
+    margin-right: 15px;
+    flex-grow: 0;
+  }
+  &--checkbox {
+    margin-right: 15px;
+    flex-grow: 0;
+  }
+}

@@ -22,10 +22,18 @@
 @use "./blocks/catalog-download.scss";
 @use "./blocks/catalog-extra-card.scss";
 @use "./blocks/gift.scss";
+@use "./blocks/program-selection.scss";
+@use "./blocks/form-program.scss";
+@use "./blocks/form-program-label.scss";
+@use "./blocks/form-program-group.scss";
 
 
 
 
+
+html {
+  height: 100%;
+}
 
 body {
   background: #ffffff;
@@ -37,11 +45,18 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   margin: 0 auto;
   width: 320px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {

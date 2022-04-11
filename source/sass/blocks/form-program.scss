@@ -1,0 +1,43 @@
+.form-program {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-program__description {
+  padding: 0 20px 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 230px;
+  margin-bottom: 39px;
+}
+
+.form-program__group {
+  margin: 0;
+  &--contacts {
+    margin-bottom: 24px;
+  }
+  &--comment {
+    margin-bottom: 23px;
+  }
+  &--checkbox {
+    margin-bottom: 34px;
+  }
+}
+
+.form-program__note {
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  margin-top: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+.form-program__button {
+  margin-left: 20px;
+}
