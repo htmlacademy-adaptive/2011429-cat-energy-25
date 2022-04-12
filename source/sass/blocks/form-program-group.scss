@@ -1,0 +1,98 @@
+.form-program-group {
+  box-sizing: border-box;
+  padding: 0 20px 24px 20px;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  &--radio {
+    padding: 22px 20px 19px 20px;
+  }
+
+  &--contacts {
+    position: relative;
+    padding: 0 20px 0 20px;
+    margin-bottom: 24px;
+    border: none;
+  }
+  &--comment {
+    position: relative;
+    padding: 0 20px 0 20px;
+    border: none;
+  }
+  &--checkbox {
+    position: relative;
+    padding: 0 20px 0 20px;
+    border: none;
+  }
+  legend {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.form-program-group__label {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form-program-group__title {
+  margin: 0;
+  padding-top: 23px;
+  margin-bottom: 36px;
+  &--contacts {
+    width: 190px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 99px;
+      height: 2px;
+      top: 38px;
+      right: 0;
+      background-color: $main-color;
+      z-index: 1;
+    }
+  }
+  &--comment {
+    width: 122px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 158px;
+      height: 2px;
+      top: 35px;
+      right: 0;
+      background-color: $main-color;
+      z-index: 1;
+    }
+  }
+
+  &--extra {
+    width: 142px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 136px;
+      height: 2px;
+      top: 35px;
+      right: 0;
+      background-color: $main-color;
+      z-index: 1;
+    }
+  }
+
+}
+
+.form-program-group__textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 9px 12px 9px 15px;
+  width: 280px;
+  min-height: 150px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #E7E7E7
+}

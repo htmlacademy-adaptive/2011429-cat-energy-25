@@ -1,0 +1,52 @@
+.burger {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  &:active,
+  &:focus {
+    .burger__line {
+      &:nth-of-type(1) {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(0, -50%) rotate(45deg);
+      }
+
+      &:nth-of-type(3) {
+        top: 50%;
+        transform: translate(0, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &:active + .main-nav__list,
+  &:focus + .main-nav__list {
+    display: block;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &:nth-of-type(2) {
+    top: calc(50% + 6px);
+  }
+
+  &:nth-of-type(3) {
+    top: calc(50% - 6px);
+  }
+}

@@ -1,0 +1,36 @@
+.main-nav {
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.main-nav__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
+  list-style-type: none;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.main-nav__item {
+  padding: 22px 20px 24px 0;
+  border-top: 1px solid #E6E6E6;
+  &:last-child {
+    border-bottom: 1px solid #E6E6E6;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}

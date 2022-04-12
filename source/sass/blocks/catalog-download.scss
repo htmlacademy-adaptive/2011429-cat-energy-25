@@ -1,0 +1,35 @@
+.catalog-download {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #D3D3D3;
+    color: #000000;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 30px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #D3D3D3;
+    color: #000000;
+  }
+}
+
+.catalog-download__subtitle {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.catalog-download__decription {
+  margin-bottom: 21px;
+}

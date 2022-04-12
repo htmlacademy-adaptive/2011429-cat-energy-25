@@ -1,0 +1,26 @@
+.catalog-main__headline {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 27px 20px 41px 20px;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.catalog-main__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 320px;
+  gap: 8px;
+}
+
+.catalog-main__item {
+  padding: 11px 20px 25px 20px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.catalog-main__download {
+  margin-top: 17px;
+  padding-top: 53px;
+}

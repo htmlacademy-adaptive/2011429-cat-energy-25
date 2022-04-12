@@ -1,0 +1,21 @@
+.button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 7px 44px 7px 44px;
+  border: none;
+  background-color: $main-color;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 280px;
+  min-height: 40px;
+  cursor: pointer;
+  &--download {
+    background-color: #F2F2F2;
+    color: #444444;
+  }
+}

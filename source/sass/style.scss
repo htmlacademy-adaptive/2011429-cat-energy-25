@@ -1,1 +1,71 @@
-// Начните писать стили здесь
+@use "./blocks/variables.scss";
+@use "./blocks/fonts.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/burger.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/logo-mobile.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/headline.scss";
+@use "./blocks/button.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/rules.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/catalog-main.scss";
+@use "./blocks/catalog-extra.scss";
+@use "./blocks/catalog-card.scss";
+@use "./blocks/title.scss";
+@use "./blocks/subtitle.scss";
+@use "./blocks/card-description.scss";
+@use "./blocks/catalog-download.scss";
+@use "./blocks/catalog-extra-card.scss";
+@use "./blocks/gift.scss";
+@use "./blocks/program-selection.scss";
+@use "./blocks/form-program.scss";
+@use "./blocks/form-program-label.scss";
+@use "./blocks/form-program-group.scss";
+@use "./blocks/range.scss";
+@use "./blocks/range-scale.scss";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

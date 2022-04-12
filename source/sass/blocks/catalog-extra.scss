@@ -1,0 +1,32 @@
+.catalog-extra {
+  margin-bottom: 35px;
+}
+
+.catalog-extra__wrapper {
+  box-sizing: border-box;
+  padding: 25px 20px 0 20px;
+}
+
+.catalog-extra__title {
+  margin: 0;
+  margin-bottom: 36px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 2px;
+    top: 50%;
+    right: -20px;
+    transform: translate(0, -50%);
+    background-color: #68B738;
+  }
+}
+
+.catalog-extra__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 35px;
+}
+

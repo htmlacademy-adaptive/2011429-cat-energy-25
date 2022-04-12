@@ -1,0 +1,39 @@
+.rules {
+  margin-bottom: 49px;
+}
+
+.rules__wrapper {
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+}
+
+.rules__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.rules__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.rules__item {
+  display: grid;
+  grid-template-columns: 60px 170px;
+  gap: 20px;
+  &:not(:last-child) {
+  margin-bottom: 20px;
+  }
+}
+
+.rules__img {
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
