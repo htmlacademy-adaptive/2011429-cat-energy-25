@@ -4,8 +4,8 @@
   padding: 0;
   border: none;
   background-color: #ffffff;
-  &:active,
-  &:focus {
+  &--active,
+  &--focus {
     .burger__line {
       &:nth-of-type(1) {
         display: none;
@@ -21,11 +21,6 @@
         transform: translate(0, -50%) rotate(-45deg);
       }
     }
-  }
-
-  &:active + .main-nav__list,
-  &:focus + .main-nav__list {
-    display: block;
   }
 }
 

@@ -1,71 +1,34 @@
-@use "./blocks/variables.scss";
-@use "./blocks/fonts.scss";
-@use "./blocks/main-header.scss";
-@use "./blocks/burger.scss";
-@use "./blocks/main-nav.scss";
-@use "./blocks/logo-mobile.scss";
-@use "./blocks/promo.scss";
-@use "./blocks/headline.scss";
-@use "./blocks/button.scss";
-@use "./blocks/programs.scss";
-@use "./blocks/rules.scss";
-@use "./blocks/example.scss";
-@use "./blocks/contacts.scss";
-@use "./blocks/main-footer.scss";
-@use "./blocks/social.scss";
-@use "./blocks/copyright.scss";
-@use "./blocks/catalog-main.scss";
-@use "./blocks/catalog-extra.scss";
-@use "./blocks/catalog-card.scss";
-@use "./blocks/title.scss";
-@use "./blocks/subtitle.scss";
-@use "./blocks/card-description.scss";
-@use "./blocks/catalog-download.scss";
-@use "./blocks/catalog-extra-card.scss";
-@use "./blocks/gift.scss";
-@use "./blocks/program-selection.scss";
-@use "./blocks/form-program.scss";
-@use "./blocks/form-program-label.scss";
-@use "./blocks/form-program-group.scss";
-@use "./blocks/range.scss";
-@use "./blocks/range-scale.scss";
-
-
-html {
-  height: 100%;
-}
-
-body {
-  background: #ffffff;
-  color: #444444;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  margin: 0 auto;
-  width: 320px;
-}
-
-.main-container {
-  flex-grow: 1;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "variables.scss";
+@import "./blocks/global.scss";
+@import "./blocks/common.scss";
+@import "./blocks/fonts.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/burger.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/logo-mobile.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/headline.scss";
+@import "./blocks/button.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/rules.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/social-link.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog-main.scss";
+@import "./blocks/catalog-extra.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/card-description.scss";
+@import "./blocks/catalog-download.scss";
+@import "./blocks/catalog-extra-card.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/form-program.scss";
+@import "./blocks/form-program-label.scss";
+@import "./blocks/form-program-group.scss";
+@import "./blocks/range.scss";
+@import "./blocks/range-scale.scss";
