@@ -1,17 +1,32 @@
 .main-footer {
   padding-top: 39px;
   background-color: #F2F2F2;
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .main-footer__wrapper {
+  margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-footer__logo-text {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social {
@@ -20,4 +35,10 @@
   padding: 20px 0 21px 0;
   display: flex;
   justify-content: center;
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

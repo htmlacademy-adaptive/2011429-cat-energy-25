@@ -7,6 +7,12 @@
   background-color: #FFFFFF;
   border: 1px solid #CDCDCD;
   border-radius: 6px;
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    background: #DCDCDC;
+    border: none;
+  }
 }
 
 .range-scale__toggle {
@@ -23,14 +29,61 @@
     top: 50%;
     left: 0;
     transform: translate(6px, -50%);
+    @media (min-width: $tablet-width) {
+      transform: translate(-50%, -50%);
+    }
   }
+
+  &--present {
+    display: none;
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   &--future {
     top: 50%;
     right: 0;
     transform: translate(-6px, -50%);
+    @media (min-width: $tablet-width) {
+      transform: translate(50%, -50%);
+    }
   }
-  &--active {
+  &--mobile-active {
     display: block;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #68B738;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+  &--tablet-active {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 

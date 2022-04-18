@@ -4,6 +4,9 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .copyright__text {
@@ -14,4 +17,7 @@
   line-height: 18px;
   color: #444444;
   cursor: pointer;
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
