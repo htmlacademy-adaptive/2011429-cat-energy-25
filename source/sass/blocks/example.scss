@@ -21,8 +21,10 @@
     padding-top: 43px;
   }
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 65px;
   }
 }
 
@@ -43,6 +45,7 @@
     text-align: left;
   }
   @media (min-width: $desktop-width) {
+    padding-top: 43px;
     width: 436px;
     font-size: 60px;
     line-height: 60px;
@@ -62,6 +65,7 @@
   }
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin-bottom: 69px;
   }
 }
 
@@ -79,6 +83,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -125,7 +130,6 @@
     line-height: 37px;
     margin-bottom: 11px;
   }
-
 }
 
 .example__parametr {
@@ -148,6 +152,9 @@
     background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: #EAEAEA;
   }
 }
 

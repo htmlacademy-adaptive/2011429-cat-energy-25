@@ -7,6 +7,10 @@
     width: 592px;
     margin-bottom: 56px;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    height: 40px;
+  }
 }
 
 .range__label {

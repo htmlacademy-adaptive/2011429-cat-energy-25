@@ -3,6 +3,9 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .rules__wrapper {
@@ -51,7 +54,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     gap: 80px;
-    padding-bottom: 47px;
+    padding-bottom: 0;
   }
 }
 
