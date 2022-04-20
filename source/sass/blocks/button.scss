@@ -1,6 +1,5 @@
 .button {
   box-sizing: border-box;
-  margin: 0;
   padding: 7px 44px 7px 44px;
   border: none;
   background-color: $main-color;
@@ -17,5 +16,12 @@
   &--download {
     background-color: #F2F2F2;
     color: #444444;
+  }
+  @media (min-width: $tablet-width) {
+    &--program {
+      padding: 14px 26px 14px 26px;
+      width: 244px;
+      min-height: 54px;
+    }
   }
 }
