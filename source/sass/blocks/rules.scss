@@ -55,6 +55,7 @@
     grid-template-columns: repeat(4, 245px);
     gap: 80px;
     padding-bottom: 0;
+    counter-reset: rules;
   }
 }
 

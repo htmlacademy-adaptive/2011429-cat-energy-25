@@ -56,6 +56,7 @@
     padding-top: 45px;
     color: #000000;
     padding-left: 87px;
+    width: 420px;
   }
   @media (min-width: $desktop-width) {
     padding-top: 223px;
@@ -134,11 +135,13 @@
   @media (min-width: $tablet-width) {
     margin-left: 87px;
     position: absolute;
-    bottom: 526px;/*
-    right: calc(50% + 20px); */
+    bottom: 526px;
   }
   @media (min-width: $desktop-width) {
     position: static;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

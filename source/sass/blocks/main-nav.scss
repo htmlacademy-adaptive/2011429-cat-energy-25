@@ -83,4 +83,9 @@
       border-bottom: 2px solid #ffffff;
     }
   }
+  &--dark {
+    @media (min-width: $desktop-width) {
+      color: #000000;
+    }
+  }
 }

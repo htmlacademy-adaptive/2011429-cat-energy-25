@@ -1,5 +1,9 @@
 .catalog-download {
   position: relative;
+  color: #444444;
+  @media (min-width: $tablet-width) {
+    padding: 225px 38px 41px 38px;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -10,17 +14,25 @@
     transform: translate(-50%, 0);
     background-color: #D3D3D3;
     color: #000000;
+    @media (min-width: $tablet-width) {
+      top: 163px;
+      width: 60px;
+    }
   }
   &::after {
     position: absolute;
     content: "";
     width: 2px;
     height: 30px;
-    top: 0%;
+    top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #D3D3D3;
     color: #000000;
+    @media (min-width: $tablet-width) {
+      top: 133px;
+      height: 60px;
+    }
   }
 }
 
@@ -28,8 +40,28 @@
   margin: 0;
   text-align: center;
   margin-bottom: 8px;
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
 }
 
 .catalog-download__decription {
   margin-bottom: 21px;
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    margin: 0 auto;
+    margin-bottom: 91px;
+  }
+}
+
+.catalog-download__button {
+  display: block;
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+  }
 }
