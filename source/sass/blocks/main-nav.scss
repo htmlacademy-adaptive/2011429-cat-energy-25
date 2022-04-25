@@ -88,4 +88,9 @@
       color: #000000;
     }
   }
+  &--dark-active {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $main-color;
+    }
+  }
 }
