@@ -50,12 +50,12 @@
     grid-template-columns: repeat(2, 250px);
     gap: 37px 135px;
     padding-bottom: 47px;
+    counter-reset: rule;
   }
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     gap: 80px;
     padding-bottom: 0;
-    counter-reset: rules;
   }
 }
 
@@ -71,68 +71,19 @@
     align-items: flex-start;
     min-height: 280px;
   }
-  &--first {
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "1";
-        right: 0;
-        top: 0;
-        position: absolute;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 280px;
-        line-height: 280px;
-        color: #F2F2F2;
-        z-index: -1;
-      }
-    }
-  }
-  &--second {
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "2";
-        right: 0;
-        top: 0;
-        position: absolute;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 280px;
-        line-height: 280px;
-        color: #F2F2F2;
-        z-index: -1;
-      }
-    }
-  }
-  &--third {
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "3";
-        right: 0;
-        top: 0;
-        position: absolute;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 280px;
-        line-height: 280px;
-        color: #F2F2F2;
-        z-index: -1;
-      }
-    }
-  }
-  &--fourth {
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "4";
-        right: 0;
-        top: 0;
-        position: absolute;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 280px;
-        line-height: 280px;
-        color: #F2F2F2;
-        z-index: -1;
-      }
+  &::before {
+    @media (min-width: $tablet-width) {
+      counter-increment: rule;
+      content: counter(rule) " ";
+      right: 0;
+      top: 0;
+      position: absolute;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #F2F2F2;
+      z-index: -1;
     }
   }
 }
