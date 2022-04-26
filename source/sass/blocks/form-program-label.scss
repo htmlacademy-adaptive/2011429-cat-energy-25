@@ -1,6 +1,27 @@
 .form-program-label {
   display: flex;
   align-items: center;
+  &--info {
+    @media (min-width: $desktop-width) {
+      width: 569px;
+    }
+  }
+  &--extra {
+    &:nth-child(2n+1) {
+      @media (min-width: $tablet-width) {
+        margin-right: 123px;
+      }
+    }
+    @media (min-width: $tablet-width) {
+      width: 221px;
+    }
+    &:not(:last-child) {
+      @media (min-width: $desktop-width) {
+        margin-right: 104px;
+      }
+    }
+
+  }
 }
 
 .form-program-label__text {
@@ -11,6 +32,16 @@
   margin-right: 13px;
   &--dark {
     color: #000000;
+  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -30,6 +61,13 @@
   &--text {
     flex-grow: 1;
     min-height: 45px;
+    @media (min-width: $tablet-width) {
+      width: 551px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 486px;
+      min-height: 52px;
+    }
   }
   &--radio {
     margin-right: 15px;
@@ -38,5 +76,22 @@
   &--checkbox {
     margin-right: 15px;
     flex-grow: 0;
+  }
+  &--email {
+    @media (min-width: $tablet-width) {
+      width: 551px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-right: 78px;
+      width: 486px;
+    }
+  }
+  &--tel {
+    @media (min-width: $tablet-width) {
+      width: 535px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 472px;
+    }
   }
 }

@@ -1,15 +1,33 @@
 .program-selection__wrapper {
+  margin: 0 auto;
   box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    padding: 48px 70px 0 65px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 56px 110px 0 110px;
+  }
 }
 
 .program-selection__headline {
+  width: 100%;
+  text-align: left;
   margin: 0;
   margin-bottom: 37px;
-  padding: 27px 20px 0 20px;
+  padding: 27px 0 0 0;
   border-top: 1px solid #D9D9D9;
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    width: 436px;
+    padding: 0;
+  }
 }
 
 .program-selection__form {
   margin-bottom: 32px;
+  padding: 0;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 

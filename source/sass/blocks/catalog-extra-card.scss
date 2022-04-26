@@ -1,11 +1,56 @@
 .catalog-extra-card {
+  margin: 0;
+  padding: 0;
   padding-top: 13px;
   padding-bottom: 19px;
   border-bottom: 1px solid #CDCDCD;
   &:first-child {
     border-top: 1px solid #CDCDCD;
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid #CDCDCD;
+    }
+  }
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+    @media (min-width: $desktop-width) {
+      border-bottom: 1px solid #CDCDCD;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    box-sizing: border-box;
+    width: 708px;
+    padding: 26px 38px 28px 38px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 1px 15px 1px;
+  }
+
+}
+
+.catalog-extra-card__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    width: 612px;
+    margin-right: 38px;
   }
 }
+
 
 .catalog-extra-card__subtitle {
   margin: 0;
@@ -19,8 +64,21 @@
 
 
 .catalog-extra-card__details-item {
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.catalog-extra-card__button {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }

@@ -63,25 +63,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &--mobile {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  width: 100%;
+  height: 362px;
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
-  &--tablet {
-    display: none;
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-  &--desktop {
-    display: none;
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
-
 }

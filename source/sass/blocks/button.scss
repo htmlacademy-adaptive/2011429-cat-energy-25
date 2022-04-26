@@ -24,4 +24,8 @@
       min-height: 54px;
     }
   }
+  @media (min-width: $desktop-width)  {
+    padding: 10px 30px 10px 30px;
+
+  }
 }
