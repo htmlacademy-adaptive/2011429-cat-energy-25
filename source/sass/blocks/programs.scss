@@ -18,10 +18,11 @@
   margin: 0 auto;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 280px;
+  grid-template-columns: 88vw;
   row-gap: 20px;
   @media (min-width: $tablet-width) {
-    grid-template-columns: 708px;
+    margin: 0;
+    grid-template-columns: 93vw;
     row-gap: 30px;
   }
   @media (min-width: $desktop-width) {

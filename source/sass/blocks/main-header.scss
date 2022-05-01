@@ -3,19 +3,34 @@
   box-sizing: border-box;
   position: relative;
   padding-top: 10px;
-  padding-bottom: 17px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+  &--noborder {
+    border-bottom: none;
+  }
   @media (min-width: $tablet-width) {
+    width: 100%;
+    align-items: center;
     padding-top: 24px;
+    border-bottom: none;
   }
   @media (min-width: $desktop-width) {
     padding-top: 53px;
+    width: 1440px;
+    z-index: 1;
   }
 }
 
 .main-header__logo {
   display: block;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
 }

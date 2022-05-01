@@ -21,3 +21,14 @@
     margin-right: 22px;
   }
 }
+
+.copyright__logo {
+  color: #666666;
+  &:hover {
+    fill: $main-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+
+}
