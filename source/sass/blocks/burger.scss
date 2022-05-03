@@ -1,8 +1,10 @@
 .burger {
-  position: relative;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  transform: translateY(-50%);
   border: none;
+  cursor: pointer;
   background-color: #ffffff;
   width: 24px;
   height: 16px;

@@ -20,8 +20,8 @@
         margin-right: 104px;
       }
     }
-
   }
+
 }
 
 .form-program-label__text {
@@ -94,4 +94,13 @@
       width: 472px;
     }
   }
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
+  &:focus {
+    border: 2px solid #444444;
+  }
+  /* &:invalid {
+    border: 2px solid #FF8282;
+  } */
 }
