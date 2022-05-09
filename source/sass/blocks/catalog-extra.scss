@@ -15,72 +15,87 @@
 }
 
 .catalog-extra__title {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 22px;
   margin: 0;
   margin-bottom: 36px;
   position: relative;
-  &::after {
+  background-color: #ffffff;
+  &::before {
     position: absolute;
     content: "";
-    width: 53px;
+    width: calc(100vw - 40px) ;
     height: 2px;
     top: 50%;
-    right: -20px;
-    transform: translate(0, -50%);
+    left: 0;
+    transform: translateY(50%);
     background-color: #68B738;
+    z-index: -1;
     @media (min-width: $tablet-width) {
-      width: 328px;
-      right: -30px;
+      width: calc(100vw - 30px);
     }
     @media (min-width: $desktop-width) {
-      width: 957px;
-      right: -110px;
+      width: calc(100vw - 110px);
     }
   }
-  @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-    padding-left: 37px;
-  }
-  @media (min-width: $desktop-width) {
-    padding-left: 0;
-  }
-  &::before {
+  &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      width: 30px;
+      width: calc(100vw - 30px) ;
       height: 2px;
       top: 50%;
       left: -30px;
-      transform: translate(0, -50%);
+      transform: translateY(50%);
       background-color: #68B738;
+      z-index: -1;
     }
     @media (min-width: $desktop-width) {
-      width: 70px;
+      width: calc(100vw - 110px);
       left: -110px;
     }
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    padding-left: 37px;
+    padding-right: 36px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 35px;
   }
 }
 
 .catalog-extra__main-wrapper {
   display: flex;
   flex-wrap: wrap;
-
+  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;;
+  }
 }
 
 .catalog-extra__list {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  width: 100%;
   list-style-type: none;
   margin-bottom: 35px;
   @media (min-width: $tablet-width) {
     border: 1px solid #CDCDCD;
-    margin-right: 79px;
+    /* margin-right: 79px; */
   }
   @media (min-width: $desktop-width) {
     border: none;
+    width: 46%;
   }
 }
 
+.catalog-extra__gift {
+  display: block;
+}

@@ -39,4 +39,7 @@
       color: rgba($color: #444444, $alpha: 0.3);
     }
   }
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
 }

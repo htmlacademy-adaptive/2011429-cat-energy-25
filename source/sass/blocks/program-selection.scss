@@ -5,16 +5,18 @@
     padding: 48px 70px 0 65px;
   }
   @media (min-width: $desktop-width) {
+    width: 1440px;
     padding: 56px 110px 0 110px;
   }
 }
 
 .program-selection__headline {
+  box-sizing: border-box;
   width: 100%;
   text-align: left;
   margin: 0;
   margin-bottom: 37px;
-  padding: 27px 0 0 0;
+  padding: 27px 20px 0 20px;
   @media (min-width: $tablet-width) {
     width: 436px;
     padding: 0;
@@ -24,6 +26,9 @@
 .program-selection__form {
   margin-bottom: 32px;
   padding: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }

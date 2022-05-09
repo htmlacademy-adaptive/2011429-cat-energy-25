@@ -11,6 +11,7 @@
   color: #000000;
   width: 230px;
   margin-bottom: 39px;
+  padding: 0 20px;
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 20px;
@@ -23,12 +24,15 @@
   margin: 0;
   &--contacts {
     margin-bottom: 24px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
   }
   &--comment {
     margin-bottom: 23px;
-  }
-  &--checkbox {
-    margin-bottom: 34px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+    }
   }
 }
 
@@ -38,22 +42,47 @@
     flex-wrap: wrap;
   }
 }
+.form-program__wrapper-button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 21px;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
 
 .form-program__note {
   box-sizing: border-box;
-  padding: 0 20px 0 20px;
   margin-top: 21px;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-top: 0;
+  }
 }
 
 .form-program__button {
+  width: 100%;
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 61px;
-    margin-bottom: 72px;
+    width: 50%;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
   }
 }

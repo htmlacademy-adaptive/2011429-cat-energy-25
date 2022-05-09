@@ -1,12 +1,24 @@
 .form-program-label {
   display: flex;
   align-items: center;
-  &--info {
-    @media (min-width: $desktop-width) {
-      width: 569px;
+  &--extra {
+    position: relative;
+  }
+  &--extra:not(:last-child) {
+    margin-bottom: 12px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
     }
   }
-  &--extra {
+  &--radio {
+    position: relative;
+    margin-bottom: 13px;
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  /* &--extra {
     &:nth-child(2n+1) {
       @media (min-width: $tablet-width) {
         margin-right: 123px;
@@ -20,8 +32,18 @@
         margin-right: 104px;
       }
     }
+  } */
+  &--email {
+    @media (min-width: $desktop-width) {
+      width: 46.5%;
+      margin-right: 80px;
+    }
   }
-
+  &--tel {
+    @media (min-width: $desktop-width) {
+      width: 46.5%;
+    }
+  }
 }
 
 .form-program-label__text {
@@ -34,7 +56,6 @@
     color: #000000;
   }
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -42,6 +63,15 @@
     margin-bottom: 0;
     font-size: 20px;
     line-height: 30px;
+  }
+  &--radio {
+    padding: 6px 6px 6px 45px;
+    @media (min-width: $desktop-width) {
+      padding-left: 45px;
+    }
+  }
+  &--checkbox {
+    padding: 5px 5px 7px 44px;
   }
 }
 
@@ -59,13 +89,10 @@
     color: #444444
   }
   &--text {
+    padding: 10px 20px 11px 20px;
     flex-grow: 1;
     min-height: 45px;
-    @media (min-width: $tablet-width) {
-      width: 551px;
-    }
     @media (min-width: $desktop-width) {
-      width: 486px;
       min-height: 52px;
     }
   }
@@ -73,27 +100,35 @@
     margin-right: 15px;
     flex-grow: 0;
   }
+
+  &--radio[type="radio"]:checked + .form-program-label__radio::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+
   &--checkbox {
     margin-right: 15px;
     flex-grow: 0;
   }
-  &--email {
-    @media (min-width: $tablet-width) {
-      width: 551px;
-    }
-    @media (min-width: $desktop-width) {
-      margin-right: 78px;
-      width: 486px;
-    }
+
+  &--checkbox[type="checkbox"]:checked + .form-program-label__checkbox::before {
+    position: absolute;
+    content: "";
+    background: url("../img/form/checkbox.svg") no-repeat center center;
+    width: 18px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  &--tel {
-    @media (min-width: $tablet-width) {
-      width: 535px;
-    }
-    @media (min-width: $desktop-width) {
-      width: 472px;
-    }
-  }
+
   &:hover {
     border: 1px solid #CDCDCD;
   }

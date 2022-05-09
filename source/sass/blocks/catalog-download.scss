@@ -1,8 +1,11 @@
 .catalog-download {
+  box-sizing: border-box;
   position: relative;
   color: #444444;
   @media (min-width: $tablet-width) {
-    padding: 225px 38px 41px 38px;
+    padding: 161px 38px 39px 38px;
+    border: 2px solid #F2F2F2;
+
   }
   &::before {
     position: absolute;
@@ -15,7 +18,7 @@
     background-color: #D3D3D3;
     color: #000000;
     @media (min-width: $tablet-width) {
-      top: 163px;
+      top: 82px;
       width: 60px;
     }
   }
@@ -30,7 +33,7 @@
     background-color: #D3D3D3;
     color: #000000;
     @media (min-width: $tablet-width) {
-      top: 133px;
+      top: 52px;
       height: 60px;
     }
   }
@@ -58,6 +61,9 @@
 
 .catalog-download__button {
   display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
   @media (min-width: $desktop-width) {
     width: 169px;
     font-size: 16px;
