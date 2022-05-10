@@ -38,7 +38,7 @@
     </header>
     <main class="main-container">
       <section class="program-selection">
-        <div class="program-selection__wrapper container">
+        <div class="program-selection__wrapper">
           <h1 class="program-selection__headline headline">Подбор программы</h1>
           <form class="program-selection__form form-program" action="https://echo.htmlacademy.ru/" method="POST">
             <div class="form-program__description">Заполните анкету, и мы подберем
@@ -48,15 +48,15 @@
                 <legend>
                   <h2 class="visually-hidden">Данные кота</h2>
                 </legend>
-                <label class="form-program-group__label form-program-label form-program-label--info">
+                <label class="form-program-group__label form-program-group__label--info form-program-label">
                   <span class="form-program-label__text">ИМЯ:*</span>
                   <input class="form-program-label__input form-program-label__input--text" type="text" name="name" placeholder="Барсик" required>
                 </label>
-                <label class="form-program-group__label form-program-label form-program-label--info">
+                <label class="form-program-group__label form-program-group__label--info form-program-label">
                   <span class="form-program-label__text">Вес (кг):*</span>
                   <input class="form-program-label__input form-program-label__input--text" type="number" name="weight" placeholder="7" required>
                 </label>
-                <label class="form-program-group__label form-program-label form-program-label--info">
+                <label class="form-program-group__label form-program-group__label--info form-program-label">
                   <span class="form-program-label__text">Возраст (лет):</span>
                   <input class="form-program-label__input form-program-label__input--text" type="number" name="age" placeholder="7">
                 </label>
@@ -66,16 +66,19 @@
                   <h2 class="visually-hidden">Выбор программы</h2>
                 </legend>
                 <label class="form-program-group__label form-program-label form-program-label--radio">
-                  <input class="form-program-label__input form-program-label__input--radio" type="radio" name="choice-program" checked>
-                  <span class="form-program-label__text">похудение</span>
+                  <input class="visually-hidden form-program-label__input form-program-label__input--radio" type="radio" name="choice-program" checked>
+                  <span class="form-program-label__radio form-radio"></span>
+                  <span class="form-program-label__text form-program-label__text--radio">похудение</span>
                 </label>
-                <label class="form-program-group__label form-program-label">
-                  <input class="form-program-label__input form-program-label__input--radio" type="radio" name="choice-program" >
-                  <span class="form-program-label__text">Набор массы</span>
+                <label class="form-program-group__label form-program-label form-program-label--radio">
+                  <input class="visually-hidden form-program-label__input form-program-label__input--radio" type="radio" name="choice-program" >
+                  <span class="form-program-label__radio form-radio"></span>
+                  <span class="form-program-label__text form-program-label__text--radio">Набор массы</span>
                 </label>
-                <label class="form-program-group__label form-program-label">
-                  <input class="form-program-label__input form-program-label__input--radio" type="radio" name="choice-program">
-                  <span class="form-program-label__text">Не знаю (Нужен ваш совет)</span>
+                <label class="form-program-group__label form-program-label form-program-label--radio">
+                  <input class="visually-hidden form-program-label__input form-program-label__input--radio" type="radio" name="choice-program">
+                  <span class="form-program-label__radio form-radio"></span>
+                  <span class="form-program-label__text form-program-label__text--radio">Не знаю (Нужен ваш совет)</span>
                 </label>
               </fieldset>
             </div>
@@ -84,12 +87,12 @@
                 <h2 class="form-program-group__title form-program-group__title--contacts title">Контактные данные
                   (владельца кота)</h2>
                 </legend>
-              <div class="form-program-group__wrapper">
-                <label class="form-program-group__label form-program-label">
+              <div class="form-program-group__wrapper form-program-group__wrapper--contacts">
+                <label class="form-program-group__label form-program-group__label--email form-program-label form-program-label--email">
                   <span class="form-program-label__text">E-mail:*</span>
                   <input class="form-program-label__input form-program-label__input--text form-program-label__input--email" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
                 </label>
-                <label class="form-program-group__label form-program-label">
+                <label class="form-program-group__label form-program-group__label--tel form-program-label form-program-label--tel">
                   <span class="form-program-label__text">Телефон:*</span>
                   <input class="form-program-label__input form-program-label__input--text form-program-label__input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                 </label>
@@ -106,30 +109,48 @@
               <legend>
                 <h2 class="form-program-group__title form-program-group__title--extra title">Дополнительно</h2>
               </legend>
-              <div class="form-program-group__wrapper">
-                <label class="form-program-group__label form-program-label form-program-label--extra">
-                  <input class="form-program-label__input form-program-label__input--checkbox" type="checkbox" name="sugar" checked>
-                  <span class="form-program-label__text form-program-label__text--dark">сахарозаменитель</span>
+              <div class="form-program-group__wrapper form-program-group__wrapper--extra">
+                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                  <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="sugar" checked>
+                  <span class="form-program-label__checkbox form-checkbox"></span>
+                  <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">сахарозаменитель</span>
                 </label>
-                <label class="form-program-group__label form-program-label form-program-label--extra">
-                  <input class="form-program-label__input form-program-label__input--radio" type="checkbox" name="water" >
-                  <span class="form-program-label__text form-program-label__text--dark">питьевая вода</span>
+                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                  <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="water" >
+                  <span class="form-program-label__checkbox form-checkbox"></span>
+                  <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">питьевая вода</span>
                 </label>
-                <label class="form-program-group__label form-program-label form-program-label--extra">
-                  <input class="form-program-label__input form-program-label__input--radio" type="checkbox" name="milk">
-                  <span class="form-program-label__text form-program-label__text--dark">молоко</span>
+                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                  <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="milk">
+                  <span class="form-program-label__checkbox form-checkbox"></span>
+                  <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">молоко</span>
                 </label>
-                <label class="form-program-group__label form-program-label form-program-label--extra">
-                  <input class="form-program-label__input form-program-label__input--radio" type="checkbox" name="vitamins">
-                  <span class="form-program-label__text form-program-label__text--dark">витамины</span>
+                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                  <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="vitamins">
+                  <span class="form-program-label__checkbox form-checkbox"></span>
+                  <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">витамины</span>
                 </label>
+                <div class="form-program__wrapper-button">
+                  <button class="form-program__button button" type="submit">отправить заявку</button>
+                  <div class="form-program__note">* — Обязательные поля</div>
+                </div>
               </div>
             </fieldset>
-            <div class="form-program__wrapper">
-              <button class="form-program__button button" type="submit">отправить заявку</button>
-              <div class="form-program__note">* — Обязательные поля</div>
-            </div>
           </form>
+        </div>
+      </section>
+      <section class="contacts contacts--darker">
+        <div class="contacts__wrapper container">
+          <div class="contacts__wrapper-address">
+            <h2 class="contacts__title subtitle">приглашаем <br>к сотрудничеству дилеров!</h2>
+            <address class="contacts__address">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+            </address>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871642481!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650306409811!5m2!1sru!2sru" width="320" height="362"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>

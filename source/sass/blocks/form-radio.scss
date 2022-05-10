@@ -1,0 +1,21 @@
+.form-radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+  /* &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #68B738;
+  } */
+}
