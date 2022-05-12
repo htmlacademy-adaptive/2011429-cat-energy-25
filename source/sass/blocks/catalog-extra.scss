@@ -22,38 +22,28 @@
   margin-bottom: 36px;
   position: relative;
   background-color: #ffffff;
-  &::before {
+  &::after {
     position: absolute;
     content: "";
-    width: calc(100vw - 40px) ;
+    width: 100vw;
     height: 2px;
     top: 50%;
     left: 0;
     transform: translateY(50%);
     background-color: #68B738;
     z-index: -1;
-    @media (min-width: $tablet-width) {
-      width: calc(100vw - 30px);
-    }
-    @media (min-width: $desktop-width) {
-      width: calc(100vw - 110px);
-    }
   }
-  &::after {
+  &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      width: calc(100vw - 30px) ;
+      width: 100vw;
       height: 2px;
       top: 50%;
-      left: -30px;
+      right: 0;
       transform: translateY(50%);
       background-color: #68B738;
       z-index: -1;
-    }
-    @media (min-width: $desktop-width) {
-      width: calc(100vw - 110px);
-      left: -110px;
     }
   }
 

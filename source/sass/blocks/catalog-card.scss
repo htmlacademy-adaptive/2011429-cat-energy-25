@@ -57,22 +57,7 @@
 .catalog-card__img {
   object-fit: contain;
   width: 100%;
-  &--small {
-    @media (min-width: $tablet-width) {
-      width: 161px;
-      height: 172px;
-    }
-  }
-  &--big {
-    @media (min-width: $tablet-width) {
-      width: 168px;
-      height: 206px;
-    }
-    @media (min-width: $desktop-width) {
-      width: 172px;
-      height: 202px;
-    }
-  }
+  height: auto;
 }
 
 .catalog-card__details-list {
