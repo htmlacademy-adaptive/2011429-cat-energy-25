@@ -18,25 +18,12 @@
     }
   }
 
-  /* &--extra {
-    &:nth-child(2n+1) {
-      @media (min-width: $tablet-width) {
-        margin-right: 123px;
-      }
-    }
-    @media (min-width: $tablet-width) {
-      width: 221px;
-    }
-    &:not(:last-child) {
-      @media (min-width: $desktop-width) {
-        margin-right: 104px;
-      }
-    }
-  } */
   &--email {
+    margin-bottom: 13px;
     @media (min-width: $desktop-width) {
       width: 46.5%;
       margin-right: 80px;
+      margin-bottom: 0;
     }
   }
   &--tel {
@@ -135,7 +122,4 @@
   &:focus {
     border: 2px solid #444444;
   }
-  /* &:invalid {
-    border: 2px solid #FF8282;
-  } */
 }

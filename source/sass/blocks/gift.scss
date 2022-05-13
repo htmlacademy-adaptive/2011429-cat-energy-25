@@ -5,6 +5,9 @@
   background-color: green;
   background: url("../img/gift/bg-gift.png") no-repeat center center;
   background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background: url("../img/gift/bg-gift@2x.png") no-repeat center center;
+  }
   @media (min-width: $tablet-width) {
     background: url("../img/gift/bg-gift-tablet.png") no-repeat center center;
     background-size: cover;
@@ -14,9 +17,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift/bg-gift-tablet@2x.png") no-repeat center center;
+    }
   }
   @media (min-width: $desktop-width) {
-    background: url("../img/gift/bg-gift.png") no-repeat center center;
+    background: url("../img/gift/bg-gift-desktop.png") no-repeat center center;
     width: 245px;
     height: 289px;
     display: flex;
@@ -24,6 +30,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift/bg-gift-desktop@2x.png") no-repeat center center;
+    }
   }
 }
 

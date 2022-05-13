@@ -9,11 +9,12 @@
   <body class="page-body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo logo logo--mobile" href="index.html">
-          <img class="logo__img" src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
-        </a>
-        <a class="main-header__logo logo logo--tablet" href="index.html">
-          <img class="logo__img" src="img/logo/logo-tablet.png" width="174" height="52" alt="Логотип Cat Energy">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg 1x, img/logo/logo-desktop@2x.svg 2x">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg 1x, img/logo/logo-tablet@2x.svg 2x">
+            <img class="logo__img" src="img/logo/logo.svg" srcset="img/logo/logo@2x.svg 2x" width="191" height="38" alt="Логотип Cat Energy">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__burger burger burger--closed" type="button">
@@ -44,8 +45,11 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--small" src="img/catalog/catalog-chicken.png" width="68" height="86" alt="Банка корма Cat Energy
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-chicken-tablet-small.png 1x, img/catalog/catalog-chicken-tablet-small@2x.png 2x">
+                    <img class="catalog-card__img catalog-card__img--small" src="img/catalog/catalog-chicken-mobile-small.png" srcset="img/catalog/catalog-chicken-mobile-small@2x.png 2x" width="68" height="86" alt="Банка корма Cat Energy
                   PRO с курицей">
+                  </picture>
                 </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">
@@ -74,8 +78,12 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--big" src="img/catalog/catalog-chicken.png" width="84" height="101" alt="Банка корма Cat Energy
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog/catalog-chicken-desktop-big.png 1x, img/catalog/catalog-chicken-desktop-big@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-chicken-tablet-big.png 1x, img/catalog/catalog-chicken-tablet-big@2x.png 2x">
+                    <img class="catalog-card__img" src="img/catalog/catalog-chicken-mobile-big.png" srcset="img/catalog/catalog-chicken-mobile-big@2x.png 2x" width="84" height="101" alt="Банка корма Cat Energy
                   PRO с курицей">
+                  </picture>
                 </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">
@@ -104,8 +112,11 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--small" src="img/catalog/catalog-fish.png" width="68" height="86" alt="Банка корма Cat Energy
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-fish-tablet-small.png 1x, img/catalog/catalog-fish-tablet-small@2x.png 2x">
+                    <img class="catalog-card__img" src="img/catalog/catalog-fish-mobile-small.png" srcset="img/catalog/catalog-fish-mobile-small@2x.png 2x" width="68" height="86" alt="Банка корма Cat Energy
                   PRO с рыбой">
+                  </picture>
                 </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">
@@ -134,8 +145,13 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--big" src="img/catalog/catalog-fish.png" width="84" height="101" alt="Банка корма Cat Energy
-                  PRO с рыбой"></div>
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog/catalog-fish-desktop-big.png 1x, img/catalog/catalog-fish-desktop-big@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-fish-tablet-big.png 1x, img/catalog/catalog-fish-tablet-big@2x.png 2x">
+                    <img class="catalog-card__img" src="img/catalog/catalog-fish-mobile-big.png" srcset="img/catalog/catalog-fish-mobile-big@2x.png 2x" width="84" height="101" alt="Банка корма Cat Energy
+                  PRO с рыбой">
+                  </picture>
+                </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">
                     <span class="catalog-card__name">Cat Energy
@@ -163,8 +179,11 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--small" src="img/catalog/catalog-buckwheat.png" width="68" height="86" alt="Банка корма Cat Energy
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-buckwheat-tablet-small.png 1x, img/catalog/catalog-buckwheat-tablet-small@2x.png 2x">
+                    <img class="catalog-card__img" src="img/catalog/catalog-buckwheat-mobile-small.png" srcset="img/catalog/catalog-buckwheat-mobile-small@2x.png 2x" width="68" height="86" alt="Банка корма Cat Energy
                   PRO с гречкой">
+                  </picture>
                 </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">
@@ -193,8 +212,12 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--big" src="img/catalog/catalog-buckwheat.png" width="84" height="101" alt="Банка корма Cat Energy
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/catalog/catalog-buckwheat-desktop-big.png 1x, img/catalog/catalog-buckwheat-desktop-big@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-buckwheat-tablet-big.png 1x, img/catalog/catalog-buckwheat-tablet-big@2x.png 2x">
+                    <img class="catalog-card__img" src="img/catalog/catalog-buckwheat-mobile-big.png" srcset="img/catalog/catalog-buckwheat-mobile-big@2x.png 2x" width="84" height="101" alt="Банка корма Cat Energy
                   PRO с гречкой">
+                  </picture>
                 </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">
@@ -223,8 +246,11 @@
             <li class="catalog-main__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__icon">
-                  <img class="catalog-card__img catalog-card__img--small" src="img/catalog/catalog-rise.png" width="68" height="86" alt="Банка корма Cat Energy
-                  SLIM с рисом">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-rice-tablet-small.png 1x, img/catalog/catalog-rice-tablet-small@2x.png 2x">
+                    <img class="catalog-card__img" src="img/catalog/catalog-rice-mobile-small.png" srcset="img/catalog/catalog-rice-mobile-small@2x.png 2x" width="68" height="86" alt="Банка корма Cat Energy
+                  PRO с рисом">
+                  </picture>
                 </div>
                 <div class="catalog-card__decription">
                   <h3 class="catalog-card__subtitle subtitle subtitle--lighter">

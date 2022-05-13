@@ -40,9 +40,11 @@
     padding: 0 20px;
     position: relative;
     border: none;
+    margin-bottom: 23px;
     @media (min-width: $tablet-width) {
       padding: 0;
       width: 100%;
+      margin-bottom: 67px;
     }
   }
   &--checkbox {
@@ -82,16 +84,6 @@
       margin-bottom: 20px;
     }
   }
-  &--email:not(:last-child) {
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-    }
-  }
-  &--extra:not(:last-child) {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .form-program-group__title {
@@ -100,6 +92,7 @@
   margin: 0;
   margin-bottom: 36px;
   background-color: #ffffff;
+  display: inline-block;
   &--contacts {
     width: 216px;
     padding-right: 22px;
@@ -113,20 +106,24 @@
       left: 0;
       background-color: $main-color;
       z-index: -1;
-      @media (min-width: $tablet-width) {
-        left: -67px;
-      }
-      @media (min-width: $desktop-width) {
-        left: -110px;
-      }
     }
-
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
       width: 602px;
       padding-right: 40px;
       padding-left: 39px;
       margin-left: -39px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: $main-color;
+        z-index: -1;
+      }
     }
   }
   &--comment {
@@ -144,18 +141,23 @@
       left: 0;
       background-color: $main-color;
       z-index: -1;
-      @media (min-width: $tablet-width) {
-        left: -67px;
-      }
-      @media (min-width: $desktop-width) {
-        left: -110px;
-      }
     }
     @media (min-width: $tablet-width) {
       width: 262px;
       padding-right: 40px;
       padding-left: 39px;
       margin-left: -39px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: $main-color;
+        z-index: -1;
+      }
     }
     @media (min-width: $desktop-width) {
       margin-bottom: 76px;
@@ -176,18 +178,23 @@
       left: 0;
       background-color: $main-color;
       z-index: -1;
-      @media (min-width: $tablet-width) {
-        left: -67px;
-      }
-      @media (min-width: $desktop-width) {
-        left: -110px;
-      }
     }
     @media (min-width: $tablet-width) {
       width: 302px;
       padding-right: 40px;
       padding-left: 39px;
       margin-left: -39px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: $main-color;
+        z-index: -1;
+      }
     }
   }
 }

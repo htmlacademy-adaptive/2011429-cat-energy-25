@@ -9,11 +9,12 @@
   <body class="page-body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo logo logo--mobile" href="index.html">
-          <img class="logo__img" src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
-        </a>
-        <a class="main-header__logo logo logo--tablet" href="index.html">
-          <img class="logo__img" src="img/logo/logo-tablet.png" width="174" height="52" alt="Логотип Cat Energy">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg 1x, img/logo/logo-desktop@2x.svg 2x">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg 1x, img/logo/logo-tablet@2x.svg 2x">
+            <img class="logo__img" src="img/logo/logo.svg" srcset="img/logo/logo@2x.svg 2x" width="191" height="38" alt="Логотип Cat Energy">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__burger burger burger--closed" type="button">
@@ -48,15 +49,15 @@
                 <legend>
                   <h2 class="visually-hidden">Данные кота</h2>
                 </legend>
-                <label class="form-program-group__label form-program-group__label--info form-program-label">
+                <label class="form-program-group__label form-program-label">
                   <span class="form-program-label__text">ИМЯ:*</span>
                   <input class="form-program-label__input form-program-label__input--text" type="text" name="name" placeholder="Барсик" required>
                 </label>
-                <label class="form-program-group__label form-program-group__label--info form-program-label">
+                <label class="form-program-group__label form-program-label">
                   <span class="form-program-label__text">Вес (кг):*</span>
                   <input class="form-program-label__input form-program-label__input--text" type="number" name="weight" placeholder="7" required>
                 </label>
-                <label class="form-program-group__label form-program-group__label--info form-program-label">
+                <label class="form-program-group__label form-program-label">
                   <span class="form-program-label__text">Возраст (лет):</span>
                   <input class="form-program-label__input form-program-label__input--text" type="number" name="age" placeholder="7">
                 </label>
@@ -82,50 +83,50 @@
                 </label>
               </fieldset>
             </div>
-            <fieldset class="form-program__group form-program__group--contacts form-program-group form-program-group--contacts">
+            <fieldset class="form-program__group form-program-group form-program-group--contacts">
               <legend>
                 <h2 class="form-program-group__title form-program-group__title--contacts title">Контактные данные
                   (владельца кота)</h2>
                 </legend>
               <div class="form-program-group__wrapper form-program-group__wrapper--contacts">
-                <label class="form-program-group__label form-program-group__label--email form-program-label form-program-label--email">
+                <label class="form-program-group__label form-program-label form-program-label--email">
                   <span class="form-program-label__text">E-mail:*</span>
-                  <input class="form-program-label__input form-program-label__input--text form-program-label__input--email" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+                  <input class="form-program-label__input form-program-label__input--text" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
                 </label>
-                <label class="form-program-group__label form-program-group__label--tel form-program-label form-program-label--tel">
+                <label class="form-program-group__label form-program-label form-program-label--tel">
                   <span class="form-program-label__text">Телефон:*</span>
-                  <input class="form-program-label__input form-program-label__input--text form-program-label__input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <input class="form-program-label__input form-program-label__input--text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                 </label>
               </div>
             </fieldset>
-            <fieldset class="form-program__group form-program__group--comment form-program-group form-program-group--comment">
+            <fieldset class="form-program__group form-program-group form-program-group--comment">
               <legend>
                 <h2 class="form-program-group__title form-program-group__title--comment title">Комментарий</h2>
                 </legend>
                 <textarea class="form-program-group__textarea">Расскажите обо всех повАдках кота
                 </textarea>
             </fieldset>
-            <fieldset class="form-program__group form-program__group--checkbox form-program-group form-program-group--checkbox">
+            <fieldset class="form-program__group form-program-group form-program-group--checkbox">
               <legend>
                 <h2 class="form-program-group__title form-program-group__title--extra title">Дополнительно</h2>
               </legend>
               <div class="form-program-group__wrapper form-program-group__wrapper--extra">
-                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                <label class="form-program-group__label form-program-label form-program-label--extra">
                   <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="sugar" checked>
                   <span class="form-program-label__checkbox form-checkbox"></span>
                   <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">сахарозаменитель</span>
                 </label>
-                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                <label class="form-program-group__label form-program-label form-program-label--extra">
                   <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="water" >
                   <span class="form-program-label__checkbox form-checkbox"></span>
                   <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">питьевая вода</span>
                 </label>
-                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                <label class="form-program-group__label form-program-label form-program-label--extra">
                   <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="milk">
                   <span class="form-program-label__checkbox form-checkbox"></span>
                   <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">молоко</span>
                 </label>
-                <label class="form-program-group__label form-program-group__label--extra form-program-label form-program-label--extra">
+                <label class="form-program-group__label form-program-label form-program-label--extra">
                   <input class="visually-hidden form-program-label__input form-program-label__input--checkbox" type="checkbox" name="vitamins">
                   <span class="form-program-label__checkbox form-checkbox"></span>
                   <span class="form-program-label__text form-program-label__text--checkbox form-program-label__text--dark">витамины</span>

@@ -9,11 +9,12 @@
   <body class="page-body">
     <header class="main-header">
       <div class="main-header__wrapper main-header__wrapper--noborder">
-        <a class="main-header__logo logo logo--mobile" href="#">
-          <img class="logo__img" src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
-        </a>
-        <a class="main-header__logo logo logo--tablet" href="#">
-          <img class="logo__img" src="img/logo/logo-tablet.png" width="174" height="52" alt="Логотип Cat Energy">
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg 1x, img/logo/logo-desktop@2x.svg 2x">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg 1x, img/logo/logo-tablet@2x.svg 2x">
+            <img class="logo__img" src="img/logo/logo.svg" srcset="img/logo/logo@2x.svg 2x" width="191" height="38" alt="Логотип Cat Energy">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__burger burger burger--closed" type="button">
@@ -43,15 +44,14 @@
             <h1 class="promo__headline headline">Функциональное
               питание для котов</h1>
             <div class="promo__description">Занялся собой? Займись котом!</div>
-            <img class="promo__img promo__img--mobile" src="img/promo/food-cat-mobile.png" width="280" height="270" alt="Банка корма Cat Energy" >
-            <img class="promo__img promo__img--tablet" src="img/promo/food-cat-tablet.png" width="709" height="609" alt="Банка корма Cat Energy" >
-            <img class="promo__img promo__img--desktop" src="img/promo/food-cat-desktop.png" width="552" height="499" alt="Банка корма Cat Energy" >
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/promo/food-cat-desktop.png 1x, img/promo/food-cat-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/promo/food-cat-tablet.png 1x, img/promo/food-cat-tablet@2x.png 2x">
+              <img class="promo__img promo__img--mobile" src="img/promo/food-cat-mobile.png" srcset="img/promo/food-cat-mobile@2x.png 2x" width="280" height="270" alt="Банка корма Cat Energy" >
+            </picture>
             <a class="promo__link button button--program" href="program.html">подобрать программу</a>
           </div>
         </div>
-        <!-- <div class="promo__wrapper container">
-          <a class="promo__link button button--program" href="program.html">подобрать программу</a>
-        </div> -->
       </section>
       <section class="programs">
         <div class="programs__wrapper container">
@@ -164,11 +164,26 @@
             </div>
           </div>
           <div class="example__column-img">
-            <img class="example__img example__img--mobile example__img--mobile-active" src="img/example/cat-fat.png" width="280" height="232" alt="Изображение кота">
-            <img class="example__img example__img--mobile" src="img/example/cat-skinny.png" width="280" height="232" alt="Изображение кота">
-            <img class="example__img example__img--tablet" src="img/example/cat-fat-tablet.png" width="592" height="511" alt="Изображение кота">
-            <img class="example__img example__img--tablet example__img--tablet-active" src="img/example/cat-middle-tablet.png" width="592" height="511" alt="Изображение кота">
-            <img class="example__img example__img--tablet" src="img/example/cat-skinny-tablet.png" width="592" height="511" alt="Изображение кота">
+            <ol class="example__slider-list">
+              <li class="example__slider-item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/example/cat-fat-tablet.png 1x, img/example/cat-fat-tablet@2x.png 2x">
+                  <img class="example__img" src="img/example/cat-fat.png" srcset="img/example/cat-fat@2x.png 2x" width="280" height="232" alt="Изображение кота">
+                </picture>
+              </li>
+              <li class="example__slider-item example__slider-item--tablet example__slider-item--active">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/example/cat-middle-tablet.png 1x, img/example/cat-middle-tablet@2x.png 2x,">
+                  <img class="example__img" src="img/example/cat-fat.png" srcset="img/example/cat-fat@2x.png 2x" width="280" height="232" alt="Изображение кота">
+                </picture>
+              </li>
+              <li class="example__slider-item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/example/cat-skinny-tablet.png 1x, img/example/cat-skinny-tablet@2x.png 2x">
+                  <img class="example__img" src="img/example/cat-skinny.png" srcset="img/example/cat-skinny@2x.png 2x" width="280" height="232" alt="Изображение кота">
+                </picture>
+              </li>
+            </ol>
             <div class="example__img example__range range">
               <p class="range__label">было</p>
               <div class="range__scale range-scale">
