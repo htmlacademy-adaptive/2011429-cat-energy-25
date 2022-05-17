@@ -18,7 +18,7 @@
     @media (min-width: $desktop-width) {
       padding: 25px 28px 25px 28px;
       width: 46.5%;
-      margin-bottom: 69px;
+      margin-bottom: 60px;
     }
   }
   &--contacts {
@@ -54,7 +54,7 @@
       padding: 0;
     }
     @media (min-width: $desktop-width) {
-      margin-bottom: 61px;
+      margin-bottom: 87px;
      }
   }
   legend {
@@ -73,15 +73,6 @@
       width: 46.5%;
       margin-right: 80px;
       margin-bottom: 69px;
-    }
-  }
-}
-
-.form-program-group__label {
-  &:not(:last-child) {
-    margin-bottom: 13px;
-    @media (min-width: $desktop-width) {
-      margin-bottom: 20px;
     }
   }
 }
@@ -196,6 +187,9 @@
         z-index: -1;
       }
     }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 57px;
+    }
   }
 }
 
@@ -212,6 +206,9 @@
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #E7E7E7;
+  @media (min-width: $desktop-width) {
+    min-height: 174px;
+  }
 }
 
 .form-program-group__wrapper {

@@ -27,12 +27,14 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
 }
 
 .main-footer__social {
   border-bottom: 1px solid #D9D9D9;
   border-top: 1px solid #D9D9D9;
-  padding: 20px 0 21px 0;
   display: flex;
   justify-content: center;
   @media (min-width: $tablet-width) {

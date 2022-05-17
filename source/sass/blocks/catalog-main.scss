@@ -22,13 +22,15 @@
   padding: 27px 20px 41px 20px;
   text-align: left;
   @media (min-width: $tablet-width) {
-    padding: 65px 30px 41px 30px;
+    padding: 64px 30px 41px 30px;
     margin-bottom: 122px;
     width: 440px;
   }
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     margin-bottom: 165px;
+    padding-top: 74px;
+    padding-bottom: 0;
     padding-left: 110px;
     padding-right: 110px;
     width: 1220px ;
@@ -52,7 +54,7 @@
     margin: 0 auto;
     padding: 0 110px;
     grid-template-columns: repeat(4, 245px);
-    gap: 144px 80px;
+    gap: 142px 80px;
   }
 
 }

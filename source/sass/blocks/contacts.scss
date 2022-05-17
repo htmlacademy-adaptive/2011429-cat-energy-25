@@ -13,6 +13,7 @@
 }
 
 .contacts__wrapper-address {
+  box-sizing: border-box;
   padding: 26px 0 26px 0;
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,9 @@
   width: 139px;
   @media (min-width: $tablet-width) {
     width: 175px;
+  }
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
   }
 }
 

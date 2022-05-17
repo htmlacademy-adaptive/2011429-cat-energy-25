@@ -18,6 +18,9 @@
     line-height: 30px;
     width: 340px;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .form-program__group {
@@ -72,5 +75,7 @@
   }
   @media (min-width: $desktop-width) {
     margin-right: 81px;
+    min-height: 52px;
+    width: 47%;
   }
 }

@@ -12,7 +12,6 @@
   }
   &--radio {
     position: relative;
-    margin-bottom: 13px;
     &:not(:last-child) {
       margin-bottom: 13px;
     }
@@ -29,6 +28,14 @@
   &--tel {
     @media (min-width: $desktop-width) {
       width: 46.5%;
+    }
+  }
+  &--text {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+      @media (min-width: $desktop-width) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -54,7 +61,7 @@
   &--radio {
     padding: 6px 6px 6px 45px;
     @media (min-width: $desktop-width) {
-      padding-left: 45px;
+      padding-left: 60px;
     }
   }
   &--checkbox {
