@@ -25,7 +25,7 @@
   row-gap: 20px;
   @media (min-width: $tablet-width) {
     margin: 0;
-    grid-template-columns: 93vw;
+    grid-template-columns: 100%;
     row-gap: 30px;
   }
   @media (min-width: $desktop-width) {
