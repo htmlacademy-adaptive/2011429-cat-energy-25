@@ -44,7 +44,7 @@
     @media (min-width: $tablet-width) {
       padding: 0;
       width: 100%;
-      margin-bottom: 67px;
+      margin-bottom: 63px;
     }
   }
   &--checkbox {
@@ -54,7 +54,7 @@
       padding: 0;
     }
     @media (min-width: $desktop-width) {
-      margin-bottom: 87px;
+      margin-bottom: 59px;
      }
   }
   legend {
@@ -92,7 +92,7 @@
       content: "";
       width: 100vw;
       height: 2px;
-      top: 50%;
+      top: 57%;
       transform: translateY(50%);
       left: 0;
       background-color: $main-color;
@@ -109,7 +109,7 @@
         content: "";
         width: 100vw;
         height: 2px;
-        top: 50%;
+        top: 57%;
         transform: translateY(50%);
         right: 0;
         background-color: $main-color;
@@ -127,7 +127,7 @@
       content: "";
       width: 100vw;
       height: 2px;
-      top: 50%;
+      top: 54%;
       transform: translateY(50%);
       left: 0;
       background-color: $main-color;
@@ -143,7 +143,7 @@
         content: "";
         width: 100vw;
         height: 2px;
-        top: 50%;
+        top: 54%;
         transform: translateY(50%);
         right: 0;
         background-color: $main-color;
@@ -164,8 +164,8 @@
       content: "";
       width: 100vw;
       height: 2px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 57%;
+      transform: translateY(50%);
       left: 0;
       background-color: $main-color;
       z-index: -1;
@@ -180,8 +180,8 @@
         content: "";
         width: 100vw;
         height: 2px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 57%;
+        transform: translateY(50%);
         right: 0;
         background-color: $main-color;
         z-index: -1;
