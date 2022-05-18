@@ -36,6 +36,8 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }@media (min-width: $desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -53,7 +55,7 @@
     counter-reset: rule;
   }
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(3, 245px) 250px;
     gap: 80px;
     padding-bottom: 0;
   }
@@ -86,6 +88,9 @@
       z-index: -1;
     }
   }
+  &:first-child::before {
+    right: 20px;
+  }
 }
 
 .rules__img {
@@ -93,9 +98,10 @@
   height: 60px;
   background-color: $main-color;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  /* color: #ffffff; */
   margin-right: 20px;
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -112,5 +118,10 @@
   width: 71%;
   @media (min-width: $tablet-width) {
     width: 240px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }

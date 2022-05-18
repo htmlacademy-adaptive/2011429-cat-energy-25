@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: center;
   }
+  @media (min-width: $desktop-width)  {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-card__decription {
@@ -33,6 +36,8 @@
   }
   @media (min-width: $desktop-width) {
     width: 145px;
+    line-height: 21px;
+    margin-bottom: 18px;
   }
 }
 
@@ -50,7 +55,8 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
-    margin-bottom: 46px;
+    margin-bottom: 40px;
+    align-items: flex-end;
   }
 }
 
@@ -61,7 +67,7 @@
 }
 
 .catalog-card__details-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -76,7 +82,7 @@
   display: flex;
   justify-content: space-between;
   @media (min-width: $tablet-width) {
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     padding-top: 7px;
     border-bottom: 1px solid #CDCDCD;
   }

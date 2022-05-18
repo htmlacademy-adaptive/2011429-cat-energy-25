@@ -6,4 +6,8 @@
   left: 0;
   transform: translateY(-50%);
   border: 1px solid #CDCDCD;
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

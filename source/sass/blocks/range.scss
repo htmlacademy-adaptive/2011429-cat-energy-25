@@ -21,6 +21,8 @@
   text-transform: uppercase;
   color: #000000;
   @media (min-width: $tablet-width) {
+    width: 70px;
+    text-align: center;
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.24)

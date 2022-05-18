@@ -6,7 +6,7 @@
   }
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 56px 110px 0 110px;
+    padding: 74px 110px 0 110px;
   }
 }
 
@@ -20,6 +20,9 @@
   @media (min-width: $tablet-width) {
     width: 436px;
     padding: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
