@@ -70,7 +70,7 @@
       border-bottom: none;
     }
     @media (min-width: $desktop-width) {
-      width: 46.5%;
+      width: 46.7%;
       margin-right: 80px;
       margin-bottom: 69px;
     }
@@ -93,7 +93,7 @@
       width: 100vw;
       height: 2px;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(50%);
       left: 0;
       background-color: $main-color;
       z-index: -1;
@@ -110,7 +110,7 @@
         width: 100vw;
         height: 2px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(50%);
         right: 0;
         background-color: $main-color;
         z-index: -1;
@@ -128,7 +128,7 @@
       width: 100vw;
       height: 2px;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(50%);
       left: 0;
       background-color: $main-color;
       z-index: -1;
@@ -144,7 +144,7 @@
         width: 100vw;
         height: 2px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(50%);
         right: 0;
         background-color: $main-color;
         z-index: -1;
@@ -206,6 +206,10 @@
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #E7E7E7;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
   @media (min-width: $desktop-width) {
     min-height: 174px;
   }
@@ -235,7 +239,7 @@
     @media (min-width: $desktop-width) {
       width: 98%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 221px);
       gap: 61px 104px;
     }
   }
