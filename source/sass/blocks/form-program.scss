@@ -36,17 +36,21 @@
 .form-program__wrapper-button {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
   margin-top: 21px;
+  padding: 0 20px;
   @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     width: 100%;
+    margin-bottom: 72px;
   }
   @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
     margin-top: 0;
   }
 }
@@ -71,7 +75,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 61px;
-    width: 50%;
+    width: 43.5%;
   }
   @media (min-width: $desktop-width) {
     margin-right: 81px;
