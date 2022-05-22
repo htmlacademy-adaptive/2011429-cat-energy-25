@@ -1,7 +1,7 @@
 .programs {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
@@ -21,7 +21,7 @@
   margin: 0 auto;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 88vw;
+  grid-template-columns: 100%;
   row-gap: 20px;
   @media (min-width: $tablet-width) {
     margin: 0;
