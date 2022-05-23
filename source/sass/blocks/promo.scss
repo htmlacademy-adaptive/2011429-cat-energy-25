@@ -20,7 +20,6 @@
     @media (min-width: $desktop-width) {
     padding-left: 190px;
   }
-
 }
 
 .promo__main {
@@ -30,7 +29,7 @@
   background-image: url("../img/promo/promo-cat-bg.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover auto;
+  background-size: contain auto;
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo/promo-cat-bg@2x.png");
   }
@@ -102,7 +101,7 @@
 }
 
 .promo__img {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
   width: 280px;
   height: 270px;
   @media (min-width: $tablet-width) {
@@ -128,9 +127,12 @@
 
 .promo__link {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   width: 280px;
+  text-align: center;
   min-height: 40px;
   font-weight: 400;
   font-size: 14px;

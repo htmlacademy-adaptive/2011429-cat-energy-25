@@ -20,15 +20,20 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+  &:hover {
+    color: $main-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
   color: #666666;
   &:hover {
-    fill: $main-color;
+    color: $main-color;
   }
   &:active {
     opacity: 0.3;
   }
-
 }

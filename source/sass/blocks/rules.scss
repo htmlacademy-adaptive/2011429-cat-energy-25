@@ -47,7 +47,7 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 88vw;
+  grid-template-columns: 100%;
   gap: 20px;
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -105,12 +105,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* color: #ffffff; */
   margin-right: 20px;
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 }
 

@@ -1,7 +1,7 @@
 .example {
   background-color: #EAEAEA;
   @media (min-width: $tablet-width) {
-    background: linear-gradient( #ffffff 609px, #EAEAEA 609px);
+    background: linear-gradient( #ffffff 619px, #EAEAEA 619px);
   }
   @media (min-width: $desktop-width) {
     background: linear-gradient( #ffffff 179px, #EAEAEA 179px);
@@ -82,7 +82,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
   }
   @media (min-width: $desktop-width) {
     flex-direction: column;
@@ -99,7 +99,7 @@
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     grid-template-columns: 162px 162px;
@@ -135,6 +135,7 @@
   line-height: 24px;
   color: #000000;
   @media (min-width: $tablet-width) {
+    padding-top: 4px;
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 11px;
@@ -207,6 +208,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 20px;
 }
 
 .example__slider-item {
