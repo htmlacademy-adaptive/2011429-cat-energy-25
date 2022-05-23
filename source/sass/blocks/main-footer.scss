@@ -1,6 +1,10 @@
 .main-footer {
   padding-top: 39px;
   background-color: #F2F2F2;
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 56px;
+  }
   @media (min-width: $desktop-width) {
     padding-top: 57px;
     padding-bottom: 58px;
@@ -41,6 +45,7 @@
   padding: 19px 0;
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
   }
   @media (min-width: $desktop-width) {
     padding: 0;
