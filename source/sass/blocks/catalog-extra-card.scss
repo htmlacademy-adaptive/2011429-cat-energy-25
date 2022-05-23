@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #CDCDCD;
   &:first-child {
     border-top: 1px solid #CDCDCD;
@@ -51,6 +51,8 @@
 }
 
 .catalog-extra-card__subtitle {
+  padding-left: 1px;
+  line-height: 16px;
   margin: 0;
   margin-bottom: 13px;
   @media (min-width: $desktop-width) {
@@ -78,6 +80,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     font-size: 16px;
