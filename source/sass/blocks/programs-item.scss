@@ -1,6 +1,6 @@
 .programs-item {
   box-sizing: border-box;
-  padding: 21px 20px 18px 20px;
+  padding: 23px 20px 18px 20px;
   background-color: #F2F2F2;
   width: auto;
   @media (min-width: $tablet-width) {
@@ -29,11 +29,13 @@
 }
 
 .programs-item__wrapper-title {
+  padding-left: 2px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     margin-bottom: 26px;
   }
   @media (min-width: $desktop-width) {
@@ -74,6 +76,7 @@
   transform: translate(-50%, -50%);
 
   &-first {
+    top: 46%;
     @media (min-width: $tablet-width) {
       top: -10px;
       transform: translateX(-50%);
@@ -116,7 +119,7 @@
 }
 
 .programs-item__description {
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   font-family: $font-family-extra;
   font-weight: 400;
   font-size: 14px;
@@ -142,8 +145,8 @@
   box-sizing: border-box;
   position: relative;
   display: block;
-  margin-top: 19px;
-  padding: 4px 47px 4px 0;
+  margin-top: 15px;
+  padding: 4px 48px 4px 0;
   width: 134px;
   font-weight: 400;
   font-size: 16px;
@@ -158,7 +161,7 @@
     height: 12px;
     position: absolute;
     top: 50%;
-    right: 8px;
+    right: 10px;
     transform: translateY(-50%);
     background-image: url("../img/icon-arrow.svg");
   }
