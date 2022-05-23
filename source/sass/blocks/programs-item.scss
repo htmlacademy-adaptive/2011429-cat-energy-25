@@ -97,7 +97,8 @@
       height: 112px;
     }
     @media (min-width: $desktop-width) {
-      top: 20px;
+      top: 19px;
+      left: 49%;
       transform: translateX(-50%);
       width: 134px;
       height: 56px;
@@ -115,6 +116,9 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
   }
 }
 

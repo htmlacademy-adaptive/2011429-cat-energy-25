@@ -10,6 +10,8 @@
     width: 592px;
   }
   @media (min-width: $desktop-width) {
+    padding-left: 12px;
+    padding-right: 8px;
     height: 40px;
   }
 }
