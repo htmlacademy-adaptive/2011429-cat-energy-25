@@ -2,7 +2,7 @@
   background-color: #ffffff;
   width: 100%;
   @media (min-width: $tablet-width) {
-    width: 58.3%;
+    width: 59%;
     padding-right: 30px;
   }
   @media (min-width: $desktop-width) {
@@ -105,13 +105,16 @@
   }
   &:not(:last-child) {
     @media (min-width: $tablet-width) {
-      margin-right: 37px;
+      margin-right: 40px;
     }
     @media (min-width: $desktop-width) {
       margin-right: 32px;
     }
   }
   &:first-child {
+    @media (min-width: $tablet-width) {
+    margin-right: 34px;
+  }
     @media (min-width: $desktop-width) {
       margin-right: 37px;
     }

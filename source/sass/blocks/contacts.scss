@@ -20,7 +20,7 @@
   align-items: center;
   flex-wrap: wrap;
   @media (min-width: $tablet-width) {
-    padding: 57px 40px 59px 40px;
+    padding: 56px 40px 59px 40px;
   }
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -41,7 +41,7 @@
   margin: 0;
   width: 139px;
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
+    padding-top: 4px;
     width: 175px;
     font-size: 20px;
     line-height: 26px;

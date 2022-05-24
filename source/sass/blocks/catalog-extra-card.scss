@@ -43,6 +43,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 22px;
   }
   @media (min-width: $desktop-width) {
     width: 612px;
@@ -55,6 +56,11 @@
   line-height: 16px;
   margin: 0;
   margin-bottom: 13px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 2px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -66,6 +72,7 @@
   width: 100%;
   @media (min-width: $tablet-width) {
     width: 36%;
+    margin-bottom: 0;
   }
   @media (min-width: $desktop-width) {
     margin-bottom: 0;

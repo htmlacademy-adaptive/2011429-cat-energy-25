@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
   }
   @media (min-width: $desktop-width)  {
     margin-bottom: 0;
@@ -32,6 +33,7 @@
     text-align: center;
     width: 175px;
     margin: 0 auto;
+    margin-bottom: 11px;
     display: flex;
     flex-direction: column;
   }
@@ -50,14 +52,9 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 7px;
-  &--morepadding {
-    padding-bottom: 12px;
-  }
-  &--nopadding {
-    padding-bottom: 0;
-  }
+
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-bottom: 0;
     width: 168px;
     min-height: 200px;
     margin-bottom: 34px;
@@ -69,7 +66,20 @@
     margin-bottom: 40px;
     align-items: flex-end;
   }
-
+  &--morepadding {
+    padding-bottom: 12px;
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+  &--nopadding {
+    padding-bottom: 0;
+  }
+  &--bigimg {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 27px;
+    }
+  }
 }
 
 .catalog-card__img {
@@ -83,7 +93,7 @@
   margin: 0 auto;
   padding: 0;
   @media (min-width: $tablet-width) {
-    width: 250px;
+    width: 252px;
     margin-bottom: 33px;
   }
   @media (min-width: $desktop-width) {
