@@ -14,14 +14,15 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header__wrapper"><a class="main-header__logo logo" href="index.html">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg"><img class="logo__img"
-            src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="logo__img" src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__burger burger burger--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span class="burger__line"></span>
@@ -33,12 +34,10 @@
             <a class="main-nav__link main-nav__link--dark" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--dark main-nav__link--dark-active"
-              href="catalog.html">каталог продукции</a>
+            <a class="main-nav__link main-nav__link--dark main-nav__link--dark-active" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--dark" href="program.html">подбор
-              программы</a>
+            <a class="main-nav__link main-nav__link--dark" href="program.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -55,10 +54,7 @@
                 <picture>
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/catalog-chicken-tablet-small.png, img/catalog/catalog-chicken-tablet-small@2x.png 2x">
-                  <img class="catalog-card__img"
-                    src="img/catalog/catalog-chicken-mobile-small.png"
-                    srcset="img/catalog/catalog-chicken-mobile-small@2x.png 2x" width="68" height="86" alt="Банка корма Cat Energy
-                  PRO с курицей">
+                  <img class="catalog-card__img" src="img/catalog/catalog-chicken-mobile-small.png" srcset="img/catalog/catalog-chicken-mobile-small@2x.png 2x" width="68" height="86" alt="Банка корма Cat Energy PRO с курицей">
                 </picture>
               </div>
               <div class="catalog-card__decription">
@@ -432,7 +428,6 @@
       </div>
     </div>
   </footer>
-  <script src="ls/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
