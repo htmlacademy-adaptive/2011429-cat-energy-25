@@ -70,7 +70,10 @@
 }
 
 .catalog-download__button {
-  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   width: 100%;
