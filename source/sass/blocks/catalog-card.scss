@@ -63,21 +63,31 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     min-height: 196px;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
     align-items: flex-end;
+    margin-top: -79px;
   }
   &--morepadding {
     padding-bottom: 12px;
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
     }
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0px;
+    }
   }
   &--nopadding {
     padding-bottom: 0;
+    /* @media (min-width: $desktop-width) {
+      padding-bottom: 10px;
+    } */
   }
   &--bigimg {
     @media (min-width: $tablet-width) {
       margin-bottom: 27px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
     }
   }
 }
@@ -98,6 +108,7 @@
   }
   @media (min-width: $desktop-width) {
     width: 170px;
+    padding-right: 2px;
   }
 }
 
@@ -122,5 +133,6 @@
   }
   @media (min-width: $desktop-width) {
     width: 168px;
+    margin-left: 2px;
   }
 }

@@ -6,9 +6,10 @@
     padding-right: 30px;
   }
   @media (min-width: $desktop-width) {
-    width: 33.5%;
+    box-sizing: border-box;
+    width: 482px;
     background-color: transparent;
-    padding-right: 110px;
+    padding-right: 0px;
   }
   &--closed {
     .main-nav__list {

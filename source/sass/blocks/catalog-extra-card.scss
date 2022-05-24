@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 1px 15px 1px;
+    padding: 15px 0 16px 0;
   }
 }
 
@@ -47,7 +47,8 @@
   }
   @media (min-width: $desktop-width) {
     width: 612px;
-    margin-right: 38px;
+    margin-right: 36px;
+    margin-bottom: 0;
   }
 }
 
@@ -75,10 +76,10 @@
     margin-bottom: 0;
   }
   @media (min-width: $desktop-width) {
+    padding-top: 7px;
     margin-bottom: 0;
-    width: 46.5%;
+    width: 47.4%;
   }
-
 }
 
 .catalog-extra-card__details-item {
@@ -110,6 +111,7 @@
   }
   @media (min-width: $desktop-width) {
     width: 244px;
+    padding: 7px 26px 7px 26px;
   }
 }
 
@@ -120,6 +122,7 @@
     text-align: left;
     font-size: 16px;
     line-height: 20px;
+    padding-left: 2px;
   }
 }
 

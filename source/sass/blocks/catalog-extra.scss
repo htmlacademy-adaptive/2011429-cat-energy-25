@@ -38,6 +38,9 @@
     transform: translateY(50%);
     background-color: #68B738;
     z-index: -1;
+    @media (min-width: $desktop-width) {
+      top: 58%;
+    }
   }
   &::before {
     @media (min-width: $tablet-width) {
@@ -50,6 +53,9 @@
       transform: translateY(50%);
       background-color: #68B738;
       z-index: -1;
+    }
+    @media (min-width: $desktop-width) {
+      top: 58%;
     }
   }
 
@@ -88,7 +94,7 @@
   }
   @media (min-width: $desktop-width) {
     border: none;
-    width: 46%;
+    width: 73.5%;
     margin-bottom: 0;
   }
 }

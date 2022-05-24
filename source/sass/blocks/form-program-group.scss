@@ -8,17 +8,17 @@
   }
   &--radio {
     margin-bottom: 26px;
-    padding: 22px 20px 19px 20px;
+    padding: 22px 20px 17px 20px;
     @media (min-width: $tablet-width) {
       border: 1px solid #D9D9D9;
-      padding: 25px 27px 29px 27px;
-      margin-bottom: 71px;
+      padding: 25px 27px 23px 27px;
+      margin-bottom: 73px;
       width: 100%;
     }
     @media (min-width: $desktop-width) {
-      padding: 25px 28px 25px 28px;
+      padding: 25px 28px 29px 28px;
       width: 46.5%;
-      margin-bottom: 60px;
+      margin-bottom: 0;
     }
   }
   &--contacts {
@@ -33,7 +33,7 @@
       margin-bottom: 65px;
     }
     @media (min-width: $desktop-width) {
-      margin-bottom: 69px;
+      margin-bottom: 67px;
     }
   }
   &--comment {
@@ -52,6 +52,7 @@
     border: none;
     @media (min-width: $tablet-width) {
       padding: 0;
+      margin-bottom: 52px;
     }
     @media (min-width: $desktop-width) {
       margin-bottom: 59px;
@@ -62,7 +63,8 @@
     padding: 0;
   }
   &--text {
-    padding-bottom: 27px;
+    box-sizing: border-box;
+    padding-bottom: 24px;
     @media (min-width: $tablet-width) {
       width: 100%;
       padding: 0;
@@ -72,7 +74,7 @@
     @media (min-width: $desktop-width) {
       width: 46.7%;
       margin-right: 80px;
-      margin-bottom: 69px;
+      margin-bottom: 0;
     }
   }
 }
@@ -86,13 +88,14 @@
   display: inline-block;
   &--contacts {
     width: 216px;
-    padding-right: 22px;
+    padding-right: 14px;
+    line-height: 26px;
     &::before {
       position: absolute;
       content: "";
       width: 100vw;
       height: 2px;
-      top: 57%;
+      top: 30%;
       transform: translateY(50%);
       left: 0;
       background-color: $main-color;
@@ -104,16 +107,20 @@
       padding-right: 40px;
       padding-left: 39px;
       margin-left: -39px;
+      line-height: 36px;
       &::after {
         position: absolute;
         content: "";
         width: 100vw;
         height: 2px;
-        top: 57%;
+        top: 60%;
         transform: translateY(50%);
         right: 0;
         background-color: $main-color;
         z-index: -1;
+      }
+      &::before {
+        top: 60%;
       }
     }
   }
@@ -122,6 +129,7 @@
     width: 144px;
     padding-right: 22px;
     background-color: #ffffff;
+    margin-bottom: 38px;
     &::before {
       position: absolute;
       content: "";
@@ -132,6 +140,9 @@
       left: 0;
       background-color: $main-color;
       z-index: -1;
+      @media (min-width: $tablet-width) {
+        top: 59%;
+      }
     }
     @media (min-width: $tablet-width) {
       width: 262px;
@@ -143,14 +154,14 @@
         content: "";
         width: 100vw;
         height: 2px;
-        top: 54%;
+        top: 59%;
         transform: translateY(50%);
         right: 0;
         background-color: $main-color;
         z-index: -1;
       }
     }
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 76px;
     }
   }
@@ -175,6 +186,7 @@
       padding-right: 40px;
       padding-left: 39px;
       margin-left: -39px;
+      margin-bottom: 57px;
       &::after {
         position: absolute;
         content: "";
@@ -207,8 +219,10 @@
   color: #444444;
   border: 1px solid #E7E7E7;
   @media (min-width: $tablet-width) {
+    padding: 10px 12px 9px 15px;
     font-size: 20px;
     line-height: 30px;
+    min-height: 174px;
   }
   @media (min-width: $desktop-width) {
     min-height: 174px;
@@ -231,7 +245,7 @@
   }
   &--extra {
     @media (min-width: $tablet-width) {
-      width: 89%;
+      width: 90%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 32px 123px;
