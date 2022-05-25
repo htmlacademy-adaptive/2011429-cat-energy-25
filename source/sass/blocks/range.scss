@@ -1,19 +1,23 @@
 .range {
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 208px;
   @media (min-width: $tablet-width) {
+    padding: 5px 10px;
     width: 592px;
-    margin-bottom: 60px;
   }
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    padding-left: 12px;
+    padding-right: 8px;
     height: 40px;
   }
 }
 
 .range__label {
+  padding: 0 4px;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -21,7 +25,7 @@
   text-transform: uppercase;
   color: #000000;
   @media (min-width: $tablet-width) {
-    width: 70px;
+    padding: 0;
     text-align: center;
     font-size: 20px;
     line-height: 30px;

@@ -1,5 +1,8 @@
 .catalog-extra {
   margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
   @media (min-width: $desktop-width) {
     margin-bottom: 86px;
   }
@@ -22,7 +25,7 @@
   display: inline-block;
   padding-right: 22px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   position: relative;
   background-color: #ffffff;
   &::after {
@@ -35,6 +38,9 @@
     transform: translateY(50%);
     background-color: #68B738;
     z-index: -1;
+    @media (min-width: $desktop-width) {
+      top: 58%;
+    }
   }
   &::before {
     @media (min-width: $tablet-width) {
@@ -47,6 +53,9 @@
       transform: translateY(50%);
       background-color: #68B738;
       z-index: -1;
+    }
+    @media (min-width: $desktop-width) {
+      top: 58%;
     }
   }
 
@@ -78,13 +87,14 @@
   padding: 0;
   width: 100%;
   list-style-type: none;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   @media (min-width: $tablet-width) {
     border: 1px solid #CDCDCD;
+    margin-bottom: 68px;
   }
   @media (min-width: $desktop-width) {
     border: none;
-    width: 46%;
+    width: 73.5%;
     margin-bottom: 0;
   }
 }

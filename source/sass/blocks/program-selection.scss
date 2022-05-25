@@ -2,7 +2,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   @media (min-width: $tablet-width) {
-    padding: 48px 70px 0 65px;
+    padding: 64px 70px 0 70px;
   }
   @media (min-width: $desktop-width) {
     width: 1440px;
@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     width: 436px;
     padding: 0;
+    margin-bottom: 54px;
   }
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;

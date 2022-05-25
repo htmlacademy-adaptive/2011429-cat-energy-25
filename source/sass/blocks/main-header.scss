@@ -17,6 +17,7 @@
     border-bottom: none;
   }
   @media (min-width: $desktop-width) {
+    padding: 0 110px;
     align-items: center;
     padding-top: 53px;
     width: 1440px;
@@ -33,7 +34,7 @@
     padding-bottom: 0;
   }
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding-left: 0px;
     padding-bottom: 0;
   }
 }
