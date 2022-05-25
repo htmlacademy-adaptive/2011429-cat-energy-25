@@ -3,6 +3,7 @@
   position: relative;
   text-align: center;
   margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
@@ -17,7 +18,8 @@
   margin: 0 auto;
   box-sizing: border-box;
   color: #ffffff;
-    @media (min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     padding-left: 190px;
   }
 }
@@ -29,34 +31,21 @@
   background-image: url("../img/promo/promo-cat-bg.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain auto;
+  background-size: 320px auto;
+
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo/promo-cat-bg@2x.png");
+    background-size: 320px auto;
   }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     background: #ffffff;
     color: #000000;
     margin: 0;
   }
-  /* &:after {
-    @media (min-width: $desktop-width) {
-      content: '';
-      width: 50%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 694px;
-      background-color: #68B738;
-      z-index: -1;
-      background-image: url("../img/promo/promo-cat-bg-desktop.png");
-      background-repeat: no-repeat;
-      background-position: 50vw top;
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/promo/promo-cat-bg-desktop@2x.png");
-      }
-    }
-  } */
+
   @media (min-width: $desktop-width) {
     background: linear-gradient(to left, #ffffff 50%, $main-color 50%);
     background-image: url("../img/promo/promo-cat-bg-desktop.png");
@@ -65,6 +54,7 @@
     margin: 0;
     margin-top: -112px;
     min-height: 694px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo/promo-cat-bg-desktop@2x.png");
     }
@@ -79,6 +69,7 @@
   margin-bottom: 25px;
   color: #ffffff;
   width: 260px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 41px;
@@ -87,6 +78,7 @@
     padding-left: 87px;
     width: 420px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 223px;
     padding-left: 0;
@@ -102,6 +94,7 @@
   text-transform: uppercase;
   margin-bottom: 29px;
   color: #ffffff;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -112,6 +105,7 @@
     color: #000000;
     padding-left: 89px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
     padding-left: 0;
@@ -122,6 +116,7 @@
   margin-bottom: 1px;
   width: 280px;
   height: 270px;
+
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
@@ -130,6 +125,7 @@
     position: relative;
     margin-bottom: 0;
   }
+
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
@@ -158,11 +154,13 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+
   @media (min-width: $tablet-width) {
     margin-left: 90px;
     position: absolute;
     bottom: 60.2%;
   }
+
   @media (min-width: $desktop-width) {
     position: static;
     margin: 0;

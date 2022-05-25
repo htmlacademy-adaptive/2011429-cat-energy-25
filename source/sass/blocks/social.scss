@@ -6,11 +6,12 @@
   grid-template-columns: repeat(3, 28px);
   gap: 20px 24px;
   padding-right: 4px;
+
   @media (min-width: $tablet-width) {
     padding-right: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 6px;
   }
 }
-

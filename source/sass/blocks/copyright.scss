@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+
   @media (min-width: $tablet-width) {
     padding: 0;
   }
@@ -17,15 +18,19 @@
   line-height: 18px;
   color: #444444;
   cursor: pointer;
+
   @media (min-width: $tablet-width) {
     margin-right: 24px;
   }
+
   @media (min-width: $desktop-width) {
     margin-right: 22px;
   }
+
   &:hover {
     color: $main-color;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -33,12 +38,15 @@
 
 .copyright__logo {
   color: #666666;
+
   &:hover {
     color: $main-color;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 2px;
   }

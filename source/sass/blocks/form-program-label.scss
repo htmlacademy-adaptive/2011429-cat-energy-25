@@ -1,47 +1,67 @@
 .form-program-label {
   display: flex;
   align-items: center;
+
   &--extra {
     position: relative;
+
+    &:hover .form-program-label__checkbox {
+      outline: 1px solid #bababa;
+    }
   }
+
   &--extra:not(:last-child) {
     margin-bottom: 12px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
+
   &--radio {
     position: relative;
+
     &:not(:last-child) {
       margin-bottom: 13px;
+
       @media (min-width: $tablet-width) {
         margin-bottom: 10px;
       }
+
       @media (min-width: $desktop-width) {
         margin-bottom: 13px;
       }
+    }
+
+    &:hover .form-program-label__radio {
+      outline: 1px solid #bababa;
     }
   }
 
   &--email {
     margin-bottom: 13px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
     }
+
     @media (min-width: $desktop-width) {
       width: 46.5%;
       margin-right: 80px;
       margin-bottom: 0;
     }
   }
+
   &--tel {
     @media (min-width: $desktop-width) {
       width: 46.5%;
     }
   }
+
   &--text {
     &:not(:last-child) {
       margin-bottom: 14px;
+
       @media (min-width: $tablet-width) {
         margin-bottom: 20px;
       }
@@ -56,39 +76,51 @@
   text-transform: uppercase;
   margin-right: 13px;
   width: auto;
+
   &--dark {
     color: #000000;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     font-size: 20px;
     line-height: 30px;
     margin-right: 18px;
   }
+
   &--radio {
+    color: #222222;
     padding: 6px 6px 6px 45px;
+
     @media (min-width: $tablet-width) {
       padding: 6px 6px 6px 60px;
       font-size: 20px;
       line-height: 30px;
     }
+
     @media (min-width: $desktop-width) {
       padding: 5px 6px 5px 58px;
     }
   }
+
   &--checkbox {
     padding: 5px 5px 7px 44px;
+
     @media (min-width: $tablet-width) {
       margin-right: 0;
       padding: 5px 4px 7px 58px;
     }
   }
+
   &--age {
-    width: 93px;
+    display: flex;
+    flex-grow: 1;
+
     @media (min-width: $tablet-width) {
       width: auto;
     }
@@ -99,7 +131,8 @@
   margin: 0;
   box-sizing: border-box;
   padding: 13px 14px 14px 14px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
+
   &::placeholder {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -107,33 +140,40 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #444444;
+
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
     }
   }
+
   &--text {
     padding: 13px 14px 11px 14px;
     flex-grow: 1;
     min-height: 45px;
+
     @media (min-width: $tablet-width) {
       min-height: 52px;
       padding: 20px 20px 11px 18px;
     }
   }
+
   &--number {
     padding: 14px 14px 8px 16px;
     flex-grow: 1;
     min-height: 45px;
+
     @media (min-width: $tablet-width) {
       margin-left: 6px;
       min-height: 52px;
       padding: 21px 18px 11px 19px;
     }
+
     @media (min-width: $desktop-width) {
       margin-left: 0;
     }
   }
+
   &--email {
     position: relative;
     padding: 14px 14px 8px 12px;
@@ -141,37 +181,102 @@
     min-height: 45px;
     background: url("../img/form/icon-email.svg") no-repeat center right;
     background-position: top 14px right 16px;
+
     @media (min-width: $tablet-width) {
       margin-left: 6px;
       min-height: 52px;
       padding: 23px 18px 11px 21px;
-      background-position: top 19px right 16px;
     }
+
     @media (min-width: $desktop-width) {
       padding: 20px 15px 11px 15px;
       background-position: top 17px right 18px;
     }
 
+    &:focus {
+      background: url("../img/form/icon-email-focus.svg") no-repeat center right;
+      background-position: top 14px right 16px;
+
+      @media (min-width: $tablet-width) {
+        background-position: top 19px right 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-position: top 17px right 18px;
+      }
+    }
+
+    &:active:invalid {
+      background: url("../img/form/icon-email-invalid.svg") no-repeat center right;
+      background-position: top 14px right 16px;
+
+      @media (min-width: $tablet-width) {
+        background-position: top 19px right 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-position: top 17px right 18px;
+      }
+    }
   }
+
   &--tel {
     padding: 14px 14px 8px 12px;
     flex-grow: 1;
     min-height: 45px;
     background: url("../img/form/icon-phone.svg") no-repeat center right;
     background-position: top 13px right 12px;
+
     @media (min-width: $tablet-width) {
       min-height: 52px;
       padding: 21px 18px 11px 20px;
       background-position: top 18px right 14px;
     }
+
     @media (min-width: $desktop-width) {
       padding: 21px 18px 11px 15px;
       background-position: top 13px right 12px;
     }
+
+    &:focus {
+      background: url("../img/form/icon-phone-focus.svg") no-repeat center right;
+      background-position: top 13px right 12px;
+
+      @media (min-width: $tablet-width) {
+        background-position: top 18px right 14px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-position: top 13px right 12px;
+      }
+    }
+
+    &:active:invalid {
+      background: url("../img/form/icon-phone-invalid.svg") no-repeat center right;
+      background-position: top 13px right 12px;
+
+      @media (min-width: $tablet-width) {
+        background-position: top 18px right 14px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-position: top 13px right 12px;
+      }
+    }
   }
+
   &--radio {
     margin-right: 15px;
     flex-grow: 0;
+
+    &:disabled ~ .form-program-label__radio,
+    &:disabled ~ .form-program-label__text--radio {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 2px solid #444444;
+    }
   }
 
   &--radio[type="radio"]:checked + .form-program-label__radio::before {
@@ -186,9 +291,18 @@
     background-color: $main-color;
   }
 
+  &--radio[type="radio"]:focus + .form-program-label__radio {
+    outline: 2px solid #444444;
+  }
+
   &--checkbox {
     margin-right: 15px;
     flex-grow: 0;
+
+    &:disabled ~ .form-program-label__checkbox,
+    &:disabled ~ .form-program-label__text--checkbox {
+      opacity: 0.3;
+    }
   }
 
   &--checkbox[type="checkbox"]:checked + .form-program-label__checkbox::before {
@@ -200,18 +314,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 19px;
+    }
   }
 
-  &:hover {
-    border: 1px solid #CDCDCD;
+  &--checkbox[type="checkbox"]:focus + .form-program-label__checkbox {
+    outline: 2px solid #444444;
   }
 
   &:focus {
     outline: 2px solid #444444;
   }
 
-  &:active:invalid,
-  &:focus:invalid {
-    outline: 2px solid #FF3D3D;
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:required:default {
+    outline: none;
+  }
+
+  &:active:invalid {
+    outline: 2px solid #ff8282;
   }
 }
