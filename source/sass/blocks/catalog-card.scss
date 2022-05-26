@@ -29,7 +29,13 @@
 }
 
 .catalog-card__link {
+  display: block;
   text-decoration: none;
+
+  &:focus {
+    border: none;
+    outline: 2px solid #444444;
+  }
 }
 
 .catalog-card__subtitle {
@@ -37,6 +43,7 @@
   color: #222222;
   width: 80px;
   margin-bottom: 14px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -45,6 +52,7 @@
     margin-bottom: 11px;
     display: flex;
     flex-direction: column;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

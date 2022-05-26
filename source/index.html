@@ -4,23 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="main-header">
       <div class="main-header__wrapper main-header__wrapper--noborder">
-        <a class="main-header__logo logo" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-            <img class="logo__img" src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
-          </picture>
-        </a>
+        <div class="main-header__logo">
+          <a class="logo" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+              <img class="logo__img" src="img/logo/logo.svg" width="191" height="38" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+        </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__burger burger burger--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -184,13 +187,13 @@
               </li>
             </ol>
             <div class="example__img example__range range">
-              <p class="range__label">было</p>
+              <button class="range__label" type="button">было</button>
               <div class="range__scale range-scale">
                 <button class="range-scale__toggle range-scale__toggle--past range-scale__toggle--mobile-active"></button>
                 <button class="range-scale__toggle range-scale__toggle--present range-scale__toggle--tablet-active"></button>
                 <button class="range-scale__toggle range-scale__toggle--future"></button>
               </div>
-              <p class="range__label">стало</p>
+              <button class="range__label" type="button">стало</button>
             </div>
           </div>
         </div>

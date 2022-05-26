@@ -76,6 +76,7 @@
   text-transform: uppercase;
   margin-right: 13px;
   width: auto;
+  white-space: nowrap;
 
   &--dark {
     color: #000000;
@@ -118,8 +119,9 @@
   }
 
   &--age {
-    display: flex;
-    flex-grow: 1;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
 
     @media (min-width: $tablet-width) {
       width: auto;
@@ -160,7 +162,8 @@
 
   &--number {
     padding: 14px 14px 8px 16px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 100%;
     min-height: 45px;
 
     @media (min-width: $tablet-width) {
@@ -206,7 +209,7 @@
       }
     }
 
-    &:active:invalid {
+    &:not(:focus):not(:placeholder-shown):invalid {
       background: url("../img/form/icon-email-invalid.svg") no-repeat center right;
       background-position: top 14px right 16px;
 
@@ -251,7 +254,7 @@
       }
     }
 
-    &:active:invalid {
+    &:not(:focus):not(:placeholder-shown):invalid {
       background: url("../img/form/icon-phone-invalid.svg") no-repeat center right;
       background-position: top 13px right 12px;
 
@@ -333,11 +336,7 @@
     outline: 1px solid #cdcdcd;
   }
 
-  &:required:default {
-    outline: none;
-  }
-
-  &:active:invalid {
+  &:not(:focus):not(:placeholder-shown):invalid {
     outline: 2px solid #ff8282;
   }
 }

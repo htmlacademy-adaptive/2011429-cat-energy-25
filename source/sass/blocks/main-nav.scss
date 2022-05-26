@@ -208,7 +208,7 @@
     position: relative;
 
     &::after {
-      @media (min-width: $desktop-width) {
+      @media (min-width: $tablet-width) {
         position: absolute;
         content: "";
         right: 0;
