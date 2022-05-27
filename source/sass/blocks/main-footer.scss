@@ -30,6 +30,7 @@
 .main-footer__logo-text {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
