@@ -1,8 +1,10 @@
 .rules {
   margin-bottom: 50px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 26px;
   }
@@ -15,10 +17,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
   }
+
   @media (min-width: $desktop-width) {
     border: none;
   }
@@ -33,11 +37,14 @@
   color: #000000;
   margin-bottom: 40px;
   min-width: 280px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
-  }@media (min-width: $desktop-width) {
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 32px;
   }
 }
@@ -49,12 +56,14 @@
   display: grid;
   grid-template-columns: 100%;
   gap: 20px;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 37px 136px;
     padding-bottom: 46px;
     counter-reset: rule;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 245px) 250px;
     gap: 80px;
@@ -68,12 +77,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     flex-direction: column;
     align-items: flex-start;
     min-height: 280px;
   }
+
   &::before {
     @media (min-width: $tablet-width) {
       counter-increment: rule;
@@ -85,12 +96,14 @@
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: #F2F2F2;
+      color: #f2f2f2;
       z-index: -1;
     }
   }
+
   &:first-child::before {
-    right:20px;
+    right: 20px;
+
     @media (min-width: $desktop-width) {
       right: 20px;
     }
@@ -106,6 +119,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
@@ -119,6 +133,7 @@
   font-size: 14px;
   line-height: 18px;
   width: 71%;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -126,6 +141,7 @@
     font-size: 16px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop-width) {
     width: 245px;
   }

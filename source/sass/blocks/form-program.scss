@@ -12,13 +12,15 @@
   width: 230px;
   margin-bottom: 39px;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 20px;
     line-height: 30px;
     width: 340px;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 66px;
   }
@@ -33,10 +35,12 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 70px;
   }
 }
+
 .form-program__wrapper-button {
   display: flex;
   flex-direction: column;
@@ -44,6 +48,7 @@
   width: 100%;
   margin-top: 34px;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
@@ -52,8 +57,8 @@
     align-items: center;
     width: 100%;
     margin-top: 0;
-
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
     margin-top: 0;
@@ -69,11 +74,13 @@
   line-height: 16px;
   color: #000000;
   text-align: center;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
     font-size: 16px;
     margin-top: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 2px;
   }
@@ -81,6 +88,7 @@
 
 .form-program__button {
   width: 100%;
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 62px;
@@ -90,8 +98,9 @@
     font-size: 20px;
     line-height: 26px;
   }
+
   @media (min-width: $desktop-width) {
     margin-right: 81px;
-    width: 46.4%;
+    width: 46.6%;
   }
 }

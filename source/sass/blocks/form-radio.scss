@@ -7,20 +7,14 @@
   left: 0;
   transform: translateY(-50%);
   border-radius: 50%;
-  border: 1px solid #CDCDCD;
-  /* &::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background-color: #68B738;
-  } */
+  border: 1px solid #cdcdcd;
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
   }
 }

@@ -1,6 +1,6 @@
 .burger {
   position: absolute;
-  top: 30px;
+  top: 32px;
   right: 20px;
   transform: translateY(-50%);
   border: none;
@@ -8,6 +8,7 @@
   background-color: #ffffff;
   width: 24px;
   height: 16px;
+
   &--closed {
     .burger__line {
       position: absolute;
@@ -17,21 +18,26 @@
       width: 25px;
       height: 1.5px;
       background-color: #000000;
-      &:not(:last-child) {
-        margin-bottom: 8px;
-      }
-      &:nth-of-type(2) {
-        top: calc(50% + 8px);
-      }
-      &:nth-of-type(3) {
-        top: calc(50% - 8px);
-      }
+    }
+
+    .burger__line:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    .burger__line:nth-of-type(2) {
+      top: calc(50% + 8px);
+    }
+
+    .burger__line:nth-of-type(3) {
+      top: calc(50% - 8px);
     }
   }
+
   &--opened {
     .burger__line {
       display: none;
     }
+
     &::before,
     &::after {
       position: absolute;
@@ -43,18 +49,17 @@
       right: 0;
       transform: translateY(-50%);
     }
+
     &::before {
       transform: rotate(45deg);
     }
+
     &::after {
       transform: rotate(-45deg);
     }
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
-
-
-
-

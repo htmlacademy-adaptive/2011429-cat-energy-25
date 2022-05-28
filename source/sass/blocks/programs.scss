@@ -1,8 +1,10 @@
 .programs {
   margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
   }
@@ -23,11 +25,13 @@
   display: grid;
   grid-template-columns: 100%;
   row-gap: 20px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     grid-template-columns: 100%;
     row-gap: 30px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 570px 570px;
     gap: 80px;

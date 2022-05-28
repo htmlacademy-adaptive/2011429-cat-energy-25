@@ -2,10 +2,13 @@
   box-sizing: border-box;
   position: relative;
   color: #444444;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     padding: 161px 38px 39px 38px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f2;
   }
+
   &::before {
     position: absolute;
     content: "";
@@ -14,13 +17,15 @@
     top: 15px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     color: #000000;
+
     @media (min-width: $tablet-width) {
       top: 82px;
       width: 60px;
     }
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -29,28 +34,34 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     color: #000000;
+
     @media (min-width: $tablet-width) {
       top: 52px;
       height: 60px;
     }
   }
+
   @media (min-width: $desktop-width) {
     padding: 159px 36px 39px 36px;
   }
 }
 
 .catalog-download__subtitle {
+  color: #111111;
   margin: 0;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   line-height: 22px;
+
   @media (min-width: $tablet-width) {
     width: 134px;
     margin: 0 auto;
     margin-bottom: 23px;
+    line-height: 22px;
   }
+
   @media (min-width: $desktop-width) {
     padding-right: 2px;
   }
@@ -58,12 +69,16 @@
 
 .catalog-download__decription {
   margin-bottom: 21px;
+  padding-right: 2px;
+
   @media (min-width: $tablet-width) {
     width: 167px;
     margin: 0 auto;
     margin-bottom: 86px;
     line-height: 18px;
+    padding-right: 0;
   }
+
   @media (min-width: $desktop-width) {
     padding-right: 2px;
   }
@@ -77,6 +92,7 @@
   margin: 0 auto;
   padding: 0;
   width: 100%;
+
   @media (min-width: $desktop-width) {
     width: 168px;
     font-size: 16px;
